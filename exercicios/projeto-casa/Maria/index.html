@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Maria Eduarda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/thie.nunes/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/thielenunes/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Dona Ivone Lara (D. Yvonne Lara)</h1>
+                <h2 class="principal__sub">Conhecida como Rainha do Samba e Grande Dama do Samba ela foi a primeira mulher a assinar um samba-enredo e a fazer parte da ala de compositores de uma escola, a Império Serrano.</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.metropoles.com/webstories/12-fatos-sobre-dona-ivone-lara-para-conhecer-no-centenario-da-sambista">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Dona Ivone!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Thiele Nunes/img/foto02.jpeg" alt="Foto da Ivone">
+
+                    </div>
+                    <div>
+                        <p>
+                            Dona Ivone Lara foi uma compositora, cantora e instrumentista. Nasceu no início dos anos 1920, em Botafogo, no Rio de Janeiro.
+
+                            Trabalhou como enfermeira e como assistente social, até se aposentar e se dedicar exclusivamente à música.
+                            Seu talento musical fez com que conquistasse o Brasil e a se apresentasse, também, em outros países, como Angola, Estados Unidos, Japão e França.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“A chuva tá caindo, mas o samba não pode parar” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Yvonne Lara da Costa nasceu em 13 de abril de 1922. O ano é bastante confundido com 1921, como consta, inclusive, em documentos da artista.
+
+                        De acordo com dados publicados em sua biografia, a mãe de Yvonne forjou o ano de nascimento para aumentar a idade da menina em um ano e, assim, fazer com que ela fosse aceita em um colégio interno, em 1932.</p>
+                    <p> Suas composições, como Sonho Meu e Acreditar, foram interpretadas por grandes nomes da Música Popular Brasileira.
+
+                        Dona Ivone foi a primeira mulher a integrar a Ala de Compositores da Império Serrano, assinando um samba-enredo comumente listado entre os melhores de todos os tempos, Os Cinco Bailes da História do Rio (1965).
+                        Dona Ivone Lara morreu em 2018. Seu corpo foi velado na quadra do Império Serrano, sua escola do coração, em Madureira.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Thiele Nunes/img/foto02.jpeg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>No final da década de 1940, Yvonne se mudou para Madureira. Naquela época, muitas de suas composições foram assinadas pelo primo, Mestre Fuleiro, por haver preconceito com uma mulher no mundo do samba.
+
+                        Ela passou a frequentar a Escola de Samba Prazer da Serrinha, para onde, inclusive, começou a compor.
+                        
+                        Aos 25 anos, casou-se com Oscar Costa – filho de Alfredo Costa, presidente da Serrinha –, com quem teve dois filhos, Alfredo e Odir.
+                        
+                        Com o fim dessa escola, Dona Ivone passou a frequentar a Império Serrano, da qual seu primo foi um dos fundadores, em 1947.
+                        
+                        Com músicas entoadas nas rodas de samba da região, ganhou reconhecimento e passou a integrar a ala dos compositores, até então restrita a homens.
+                        
+                        Ela foi a primeira mulher a se destacar nacionalmente como compositora de uma escola de samba, mas não a primeira a compor. Carmelita Brasil, em 1959, já escrevia sambas na Unidos da Ponte.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/thiele_nunes.jpeg" alt="foto da prof Thiele">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Thiele Nunes</p>
+                    <p>Desenvolvedora Mobile</p>
+                    <a href="https://github.com/thielenunes" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
