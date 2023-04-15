@@ -400,7 +400,11 @@ header {
 }
 
 .secao-autora__foto {
-    max-width: 150px;
+    max-width: 160px;
+}
+
+.secao-autora_border{
+    border-radius: 20%;
 }
 
 .secao-autora__dados {
