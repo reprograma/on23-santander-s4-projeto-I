@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Maryanne Lima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/maryannelimaevc?mibextid=ZbWKwL" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Ícone do Facebook">
+                    </a>
+                    <a href="https://mobile.twitter.com/Mlsilvinha3991" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://instagram.com/mel.lima93?igshid=ZDdkNTZiNTM=" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/maryanne-lima"_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Taís Araújo </h1>
+                <h2 class="principal__sub">Conhecida como símbolo do movimento negro no Brasil e Defensora dos Direitos das Mulheres Negras da ONU.
+                    Em 2017 a atriz apareceu como a quinta personalidade que mais influencia os jovens, segundo uma pesquisa divulgada 
+                    em fevereiro. Ao lado do marido, Lázaro Ramos, Taís se destaca como símbolo de arte, cultura, empoderamento 
+                    e coragem.</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.revistalofficiel.com.br/pop-culture/tais-araujo-curiosidades-sobre-a-vida-e-carreira-da-atriz">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Taís Bianca Gama de Araújo </h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_Tais" src="../maryanne-lima/img/Taisaraujosorrindo.jpg" alt="Foto da Tais">
+
+                    </div>
+                    <div>
+                        <p>
+                            Taís Bianca Gama de Araújo nasceu no Rio de Janeiro, em 25 de novembro de 1978, de um parto normal prematuro, 
+aos sete meses de gestação. Formou-se no curso de jornalismo, pela Universidade Estácio de Sá, 
+mas nunca chegou a exercer a profissão, uma vez que optou por dar continuidade à carreira de atriz, 
+a atriz foi a terceira mulher negra a fazer o papel de protagonista em uma novela brasileira
+e também foi a primeira protagonista negra do horário nobre.
+A ONU Mulheres Brasil nomeou Taís Araújo como defensora dos Direitos das Mulheres Negras. 
+A atriz passa a apoiar a visibilidade das mulheres negras como um dos grupos prioritários do Plano de Trabalho 
+da ONU Brasil para a Década Internacional de Afrodescendentes.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“Se durante décadas não houve negros em posição de destaque, por que a novela iria mostrá-los?” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Em 1995 estreou na televisão na telenovela Tocaia Grande, interpretando Bernarda, filha adotiva do personagem central que se envolvia com ele após a morte da esposa deste. Alguns meses depois, conquistou sua primeira protagonista, quando Walter Avancini, diretor da telenovela Xica da Silva (1996), escolheu Taís para ser a personagem título da trama, uma escrava que se torna rainha do Arraial do Tijuco ao se unir ao poderoso contratador local.
+                         Pela novela Taís foi a terceira atriz negra a protagonizar uma telenovela brasileira em Xica da Silva (1996) – após Iolanda Braga em A Cor da Sua Pele (1965) e Ruth de Souza em A Cabana do Pai Tomás (1969). A novela foi exportada para vários países, e em 2000, a atriz foi eleita um dos 50 rostos mais bonitos do mundo pela revista People em espanhol impulsionada pela visibilidade internacional que alcançou com a trama.
+
+                        </p>
+                    <p>Em 2016, uma pesquisa de opinião (Pesquisa Qualibest) também apontou Taís Araújo como a mulher mais admirada por jovens na faixa etária entre 13 e 20 anos, a quinta artista mais influente da televisão e internet no país, segundo o jornal Meio & Mensagem em parceria com o Instituto Datafolha em 2016, e a quarta mais influente em 2017. Também foi eleita uma das mulheres mais guerreiras e estilosas pela revista americana Vogue América. </p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../maryanne-lima/img/TAÍS-ARAUJO-.png" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>Em 2017, foi eleita uma das 100 personalidades afrodescendentes mais influentes do mundo com menos de 40 anos pelo MIPAD, e por esta razão participou de um debate na Universidade de Columbia, em Nova York, onde recebeu o prêmio. O casal Taís e Lázaro foi apontado como o mais poderoso do showbizz nacional, em matéria de capa da Revista Veja publicada em março de 2017. No dia 3 de julho de 2017, foi nomeada Defensora dos Direitos das Mulheres Negras pela ONU Mulheres Brasil, entidade das Nações Unidas para a igualdade de gênero e empoderamento das mulheres. Ela foi convidada para participar de uma palestra da Tedx, em São Paulo, contando para uma audiência de cerca de nove mil pessoas, suas experiências no ativismo social na luta pela igualdade de direitos na sociedade. No mesmo ano recebeu uma homenagem no Prêmio Claudia promovido pela Revista Claudia, da Editora Abril, em São Paulo, na categoria hors concours, honraria concedida às pessoas que atuam pela igualdade de direitos na sociedade.
+
+                        Em 2021, ela e o marido Lázaro Ramos, novamente foram eleitos entre as 100 Pessoas Mais Influentes de Descendência Africana (Mipad) na premiação promovida pela ONU.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../maryanne-lima/img/Marye.jpeg" alt="foto da prof Thiele">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Maryanne Lima</p>
+                    <p>Estudante de tecnologia</p>
+                    <a href="https://github.com/Maryanne-limsi" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/company/reprogramabr/?originalSubdomain=br" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
