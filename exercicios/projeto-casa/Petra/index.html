@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Petra Melissa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/petra.melissa.3" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/umapetra" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/umapetra/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/petra-fernandes-60b2a133/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Enedina Alves Marques</h1>
+                <h2 class="principal__sub">Enedina Alves Marques estudou Engenharia Civil na Universidade Federal do Paraná, sendo a primeira mulher a se formar em engenharia no estado e a primeira engenheira negra do país.</h2>
+                <a class="principal__btn btn btn_roxo" href="https://nova-escola-producao.s3.amazonaws.com/3RJeuj9BKScK9y2eQm3FWVxX65eMbx4Ev4zkYnmuxN5eUgJEzwzkPS2Qj4hM/ei01mar21-especialmulheres-semana02-c4-download.pdf">Curiosidades</a>
+                <h3 class="principal__infocuriosidades"> *material pdf produzido pela Nova Escola</h3>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Enedina: pioneira na história da Engenharia Civil do Brasil </h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_enedina" src="./img/enedina-alves-marques-capa.jpg" alt="Foto da Enedina">
+
+                    </div>
+                    <div>
+                        <p>
+                            Enedina Alves Marques foi uma engenheira civil brasileira, pioneira e notável na sua área. Ela nasceu em 1913 em Minas Gerais, Brasil, e se formou em engenharia civil em 1945, tornando-se a primeira mulher negra a se formar nesse campo no Brasil. Enedina enfrentou muitos desafios, incluindo discriminação de gênero e raça, ao longo de sua carreira. No entanto, ela persistiu e fez história como uma profissional altamente respeitada e influente na área da engenharia civil.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>De acordo com Eleny, uma amiga, Enedina desafiava os padrões de sua época, vestindo calças e portando um revólver. Em algumas ocasiões, quando dormia nos acampamentos de construção, Enedina disparava tiros para se proteger ou impor respeito entre os trabalhadores. Embora essas ações extremas fossem raras, a postura séria, rigorosa e enérgica de Enedina lhe conferia autoridade <a href="https://revistas.ufpr.br/vernaculo/article/view/33232/21293" id="paragraforeflink"> (SANTANA, 2011). </a>
+                </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Enedina Alves Marques nasceu em 15 de julho de 1913, em uma família negra humilde no estado de Minas Gerais, Brasil. Ela cresceu em um ambiente rural, onde enfrentou a discriminação racial e de gênero desde cedo. No entanto, Enedina sempre foi uma aluna dedicada e apaixonada por matemática e física.
+
+                        Em 1945, ela se formou em engenharia civil pela Universidade Federal de Minas Gerais, tornando-se a primeira mulher negra a se formar em engenharia civil no Brasil. Sua conquista foi notável, considerando o contexto social e as barreiras enfrentadas por mulheres e afrodescendentes naquela época.</p>
+                    
+                    <p> Enedina trabalhou em várias empresas e órgãos públicos como engenheira civil, projetando e supervisionando a construção de estradas, pontes e barragens em várias regiões do Brasil. 
+                        Ela também foi uma defensora incansável dos direitos das mulheres e dos afrodescendentes, lutando por igualdade de oportunidades e enfrentando o preconceito racial e de gênero em sua carreira.
+                    </p>
+                </div>
+
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="./img/Banners-Behance_Prancheta-1-copia-4-BF63cee91161e10.webp" alt="Foto da Enedina">
+                </div>
+                
+                    <p>
+                        Inicialmente, atuou como professora na Escola da Linha de Tiro, localizada no Juvevê. Logo após sua entrada, em 1946, ela assumiu o cargo de auxiliar de engenharia na Secretaria de Estado de Viação e Obras Públicas, onde se destacou entre seus colegas.
+                        Esse destaque lhe rendeu uma transferência pelo governador Moisés Lupion para o Departamento Estadual de Águas e Energia Elétrica do Paraná. 
+                        Como engenheira do estado, teve participação no chamado "plano hidrelétrico", que visava o aproveitamento das águas dos rios Capivari, Cachoeira e Iguaçu. </p>
+                        
+                    
+                    <p>
+                        Seu trabalho e dedicação foram reconhecidos em várias ocasiões, recebendo homenagens e prêmios por sua contribuição à engenharia civil e à luta por igualdade. 
+                        Enedina Alves Marques faleceu em 22 de maio de 2011, mas seu legado como uma pioneira na engenharia civil 
+                        e defensora dos direitos humanos continua sendo uma inspiração para as gerações futuras. 
+                    </p>
+                    
+                    <figure>
+                        <p><img src="./img/usina-ene.jpg"
+                          width="500" height="300"
+                          alt="Usina">
+                        <figcaption> Usina Parigot de Souza, a qual participou enquanto engenheira.</figcaption>
+                      </figure>
+
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="./img/petra-melissa.JPEG" alt="foto da autora Petra">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Petra Melissa Fernandes </p>
+                    <p>Estudante dev front-end (ON23)</p>
+                    <a href="https://github.com/petramelissa" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://br.linkedin.com/company/reprogramabr" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Petra Melissa Fernandes @umapetra</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
