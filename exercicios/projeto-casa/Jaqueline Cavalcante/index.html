@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jaqueline Cavalcante</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/line40line/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaqueline-cavalcante-monteiro-99b9a552/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Joenia Wapichana</h1>
+                <h2 class="principal__sub">Conhecida como a primeira a se formar como advogada indígena no Brasil. É também dela o pioneirismo em ser a primeira indígena a fazer uma sustentação oral no Supremo Tribunal Federal (STF), em 2008, no processo de julgamento da homologação da Terra Indígena Raposa Serra do Sol e esteve por 22 anos à frente do departamento jurídico do Conselho Indígena de Roraima (CIR).</h2>
+                <a class="principal__btn btn btn_roxo" href="https://conexaoplaneta.com.br/blog/joenia-wapichana-vamos-tirar-a-funai-do-buraco-reconstruir-fortalecer-sera-um-grande-desafio/">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Quem é Joenia?</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_joenia" src="./IMG/foto01joenia.jpg" alt="Foto da Joenia">
+
+                    </div>
+                    <div>
+                        <p class="alinhamento_de_margin">
+                            Joênia Batista de Carvalho, mais conhecida como Joênia Wapichana,nasceu na comunidade indígena Cabeceira do Truarú em 1974, localizada na etnoregião Murupú e na zona rural do Município de Boa Vista. É de etnia Wapixana (um grupo étnico aruaque). Aos 8 anos de idade, deixou a comunidade onde nasceu e mudou-se com a mãe para a sede municipal (área urbana) de Boa Vista.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“A partir de agora essa representatividade é legítima no Congresso”, sustenta Joenia. </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Joênia Wapichana nasceu na zona rural de Boa Vista no dia 20 de abril de 1974, é uma advogada, sendo a primeira mulher indígena a exercer a profissão no Brasil, e política brasileira filiada à Rede Sustentabilidade (REDE). Atualmente, exerce a presidência da Fundação Nacional dos Povos Indígenas (Funai), tornando-se a primeira mulher indígena a comandar a entidade.
+
+                        Joênia é a primeira mulher indígena a ser eleita deputada federal, representando Roraima, durante as eleições de 2018.Antes dela, o único indígena eleito ao Parlamento foi o xavante Mário Juruna..</p>
+                    <p>  Falante nativa da língua uapixana, aprendeu o português e começou a se interessar pelos estudos na capital roraimense. Depois de concluir o ensino médio, passou a trabalhar em um escritório de contabilidade durante o dia, enquanto cursava direito à noite. Formou-se em 1997 pela Universidade Federal de Roraima (UFRR). Em 2011 concluiu o mestrado em Direito Internacional pela Universidade do Arizona, nos Estados Unidos.
+
+                        Atuou na demarcação da reserva indígena Raposa Serra do Sol, além de trabalhar no departamento jurídico do Conselho Indígena de Roraima (CIR) e na defesa de direitos de índios à posse de suas terras na Região Norte do Brasil.
+                        
+                        Foi a primeira presidente da Comissão de Direitos dos Povos indígenas da Ordem dos Advogados do Brasil (OAB), criada em 2013.
+                        
+                        Nas eleições de 2018, foi eleita à Câmara dos Deputados por Roraima, pela Rede Sustentabilidade.Crítica contumaz do governo de Jair Bolsonaro, apresentou pedido de impeachment contra o presidente em 1 de fevereiro de 2021; alegando crimes contra a população indígena. O requerimento da deputada – a única representante indígena do Congresso Nacional do Brasil na atual legislatura – foi o 66º pedido aberto contra o chefe do Executivo desde o início do seu mandato, em 2019. Em anúncio feito pela deputada em coletiva no Congresso Nacional, este pedido foi apresentado conjuntamente, também, por outros membros do partido Rede Sustentabilidade (Rede) como o senador Randolfe Rodrigues, e os deputados federais oposicionistas ao governo federal como Erika Kokay, David Miranda e Alessandro Molon.
+                        Joênia na posse de Sônia Guajajara no Ministério dos Povos Indígenas,ainda no ano de 2021, Joênia Wapichana, em audiência promovida pela Ordem dos Advogados do Brasil (OAB), criticou o governo federal e a “Nova Funai”, questionando a afirmação de que a nova entidade é ouvinte dos povos indígenas e defensora do meio ambiente, divulgada pelo general Augusto Heleno, membro do governo de Bolsonaro. Joênia afirmou que a “Nova Funai” deixou de cumprir sua tarefa mais importante: a demarcação de terras indígenas. Também reclamou da omissão diante do avanço do garimpo ilegal na Amazônia: “A situação é muito preocupante. E a Funai só atende o lado que está de acordo com as ideias do governo”, acusou. Durante seu mandato como deputada, Joênia denunciou as consequências sociais e humanitárias do impacto do garimpo sobre as populações indígenas, com o aumento do alcoolismo, fome, desestrutura familiar e casos de suicídios, especialmente entre os jovens.
+                        
+                        Em 2023, tornou-se a primeira mulher indígena a presidir a Funai, que passou a se chamar Fundação Nacional dos Povos Indígenas (antiga Fundação Nacional do Índio).</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="./IMG/joeniawapichana-696x383.jpg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>Recebeu, em 2004, o Prêmio Reebok pela sua atuação na defesa dos direitos humanos.Em 2010, foi condecorada com a Ordem do Mérito Cultural do Ministério da Cultura.Recebeu o Prêmio de Direitos Humanos da Organização das Nações Unidas (ONU) em 2018.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-reponsive img_alunas" src="./IMG/Jaqueline_Cavalcante.jpeg" alt="foto da Jaqueline">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora:Jaqueline Cavalcante</p>
+                    <p>Desenvolvedora Front End</p>
+                    <a href="https://github.com/montejc40" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - por Jaqueline Cavalcante @line40line</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
