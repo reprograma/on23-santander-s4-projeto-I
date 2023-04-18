@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Náira Nogueira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="../index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/naira.nogueira.140" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/kisimbieuala" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/naira.nog/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/n%C3%A1ira-nogueira-ba6257174/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Jaciara Melo</h1>
+                <h2 class="principal__sub">Conhecida como Jau, Jaci e dona fifi para os íntimos</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.facebook.com/jaciara.melo.121">Rede Social</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Dona Jau!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_jaciara" src="./img/JaciaraMelo.jpg" alt="Foto da Jaciara">
+
+                    </div>
+                    <div>
+                        <p>
+                           Jacira Melo de Jesus Nogueira, nasceu em 26 de abril de 1972, casou-se com Nelson Nunes Nogueira com quem teve dois filhos: Náira Nogueira e Nadson Nogueira. Filha de Jandira Melo (em memória) e Rosalvo Coelho (em memória) e irmã de Jacira Melo. É formada em Serviço Social e atualmente mora no interior da Bahia na pequena cidade de Governador Mangabeira.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“Trabalhadora, cabeça de toda a família, acolhedora, estrela que à noite mais brilha, tão protetora, tão mãe, tão filha, tão professora ” </p>
+                <cite>Projota, Guerreira</cite>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo">Sua História</h3>
+                <div>
+                    <p> Jaciara Melo de Jesus Nogueira, mulher cis, negra, do interior, nasceu em Governador Mangabeira – Bahia, cidade na qual reside até hoje. Filha de Jandira Melo (em memória) e Rosalvo Coelho (em memória) e irmã de Jacira Melo, começou a trabalhar aos 14 anos, em uma loja de roupa na cidade citada. Depois de completar maior idade, passou a trabalhar na mesma filial de loja, mas agora em uma cidade vizinha chamada Muritiba-Ba. 
+                    </p>
+                    <p> Com 21 anos se casou com seu primeiro namorado Nelson Nunes Nogueira, com o qual é casada até hoje, com quem tem dois filhos, Náira Nogueira e Nadson Nogueira. Após romper com seu atual vínculo empregatício depois de 5 anos, ainda com seus filhos pequenos, viajava frequentemente para trabalhar por dois dias da semana em uma Lotérica na capital da Bahia, em Salvador. 
+                        No período ao qual não conseguia dar 100% da sua atenção para seus filhos, contava com a ajuda de sua avó, apelidada carinhosamente por Vovó Neném, sua mãe apelidada Vovó Nanga e sua irmã Jacira que também é apelidada de Jau. 
+                        </p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="./img/com-aicha.jpeg" alt="Foto em família">
+                </div>
+                <div>
+                    <p>Depois de algum tempo, conseguiu um trabalho em Governador Mangabeira, onde conseguiu ficar mais perto da família e acompanhar e cuidar da criação de seus filhos. Neste emprego permaneceu por mais 7 anos e pediu demissão pois o convívio com alguns colegas de trabalho estava insustentável. 
+Mas não ficou muito tempo desempregada, logo conseguiu emprego em uma rede de supermercado ainda em Governador Mangabeira. Nesse mesmo período começou a cursar o ensino superior na área de Serviço Social, no qual trabalhava durante o dia e estudava pela noite, período difícil e muito corrido, pois além dessas demandas ainda cumpria com o seu compromisso de dona de casa. 
+                    </p>
+                    <p>Hoje, próximo de completar 51 anos (data de nascimento 26 de abril de 1972), goza de beleza e autocuidado, sempre preocupada com sua saúde e muito elogiada por aparentar ser irmã da sua filha. Sustenta desde nova com muita luta e dedicação a sua família, sempre apoiando-os e incentivando-os a serem melhores. Muito amada por seus filhos e por seu esposo que não mede elogios ao se tratar da sua esposa, vive uma vida tranquila na mesma pequena cidade em que nasceu, cuidando das suas plantas e sua cadela de estimação, Aicha, considerada como filha.   
+                    </p>
+            
+                   <h3 class="secao-diva__titulo">Sua música!</h3>
+
+                    <div class="musica">
+
+                    <i>
+                        <p class="trecho">
+                       <br> Eu queria ter o dom de poder cantar 
+                       <br> Igual aos pássaros que Deus fez pra viver 
+                       <br> Livre pra voar
+                        <br>Nesse azul sem dimensão
+                            <br>Queria ter poder pra poder fazer
+                                <br>Você às vezes dizer sim ao invés do não
+                                    <br>Pra fome, pra saúde, pra pobreza
+                                        <br>Pra miséria, educação
+                                            <br>Vou mudar
+                                                <br>Um dia você mesmo vai dizer
+                                                    <br>Quem era, quem tu sois
+                                                        <br>É uma miragem, podes crer
+                                                            <br>Vou mudar
+                                                                <br>Um dia você mesmo vai se ver
+                                                                    <br>Diante do espelho do poder </br>
+                                                                
+                                                                    <cite class="cite2"> 
+                                                                        <a href="https://www.youtube.com/watch?v=dz7uTOu9ctM">ESPELHO DO PODER (Letra) - Conde Só Brega</a>
+                                                                    </cite>
+                                                                </p>
+                    </i> 
+                    <img class="mainha" src="./img/JACIARAA.jpeg" alt="mainha">
+                
+                </div>
+
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="./img/naira-nog.jpeg" alt="foto da aluna Náira">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Náira Nogueira</p>
+                    <p>Aluna Frontend da {Reprograma}</p>
+                    <a href="https://github.com/Nairanogueira" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html
+            ">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
