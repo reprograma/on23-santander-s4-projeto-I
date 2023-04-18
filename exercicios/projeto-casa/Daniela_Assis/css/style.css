@@ -58,7 +58,7 @@ li {
 
 .btn_roxo {
     color: white;
-    background-color: #C083B9;
+    background-color: #b279ab;
     display: block;
     max-width: 250px;
     text-align: center;
@@ -88,7 +88,7 @@ li {
     color: white;
     text-transform: uppercase;
     box-shadow: 0px 5px 5px rgba(0,0,0,.2);
-    padding: 1.5rem;
+    padding: 0.5rem;
     z-index: 99;
     position: fixed;
     width: 100%;
@@ -157,13 +157,13 @@ li {
 
 /* --- estilos de navegacao header --- */
 header {
-    min-height: 80vh;
-    height: 500px;
-    background: linear-gradient(rgba(255, 0, 255, 0.2),
-                                rgba(255, 0, 255, 0.2)),
+    min-height: 50vh;
+    height: 720px;
+    background: linear-gradient(rgba(240, 161, 240, 0.2),
+                                rgba(237, 44, 237, 0.2)),
                 url(../img/Silvia\ Coelho-topo.jpg);
     background-size: cover;
-    background-position: center 14%;
+    background-position: center -15%;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
