@@ -13,7 +13,7 @@ max-width: % ou px
 }
 
 html {
-    font-size: 0,5em;
+    font-size: 60%;
 }
 
 body {
@@ -58,7 +58,7 @@ li {
 
 .btn_roxo {
     color: white;
-    background-color: #C083B9;
+    background-color: #df82d4;
     display: block;
     max-width: 250px;
     text-align: center;
@@ -161,7 +161,7 @@ header {
     height: 500px;
     background: linear-gradient(rgba(255, 0, 255, 0.2),
                                 rgba(255, 0, 255, 0.2)),
-                url(../img/anitta-banner.jpg);
+                url(../img/marielle-banner.jpg);
     background-size: cover;
     background-position: center 14%;
     background-repeat: no-repeat;
@@ -351,6 +351,11 @@ header {
     /* background-color: #63458a; */
 }
 
+.secao-diva__foto-perfil > .img_ivone {
+    border-radius: 10px;
+}
+
+
 .secao-diva__citacao p {
     font-weight: bold;
     border: 1px solid #63458a;
@@ -368,6 +373,10 @@ header {
 
 .img_ivone{
     max-width: 120%;
+}
+
+.secao-diva__foto-grande > .img-responsive {
+    border-radius: 10px;
 }
 
 /* --- AUTORA --- */
@@ -388,6 +397,10 @@ header {
 
 .secao-autora__foto {
     max-width: 150px;
+}
+
+.secao-autora__foto > .img-responsive {
+    border-radius: 10px;
 }
 
 .secao-autora__dados {
