@@ -10,3 +10,7 @@ https://www.figma.com/file/XBEywzd2yF47RaWm0Gw4t7Tz/M-de-Maravilhosa?node-id=4%3
 
 
 > SE ATENTEM AS INSTRUCOES QUE A PROF COLOCOU NO CLASS ROOM
+
+link home: https://mialuzmia.github.io/on23-santander-s4-projeto-I/exercicios/projeto-casa/index.html
+
+link pagina erika hilton: https://mialuzmia.github.io/on23-santander-s4-projeto-I/exercicios/projeto-casa/Mia-Azevedo/index.html
