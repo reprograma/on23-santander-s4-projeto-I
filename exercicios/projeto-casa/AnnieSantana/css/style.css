@@ -39,6 +39,11 @@ li {
     width: 100%;
 }
 
+.fotoAnnie{
+    border-radius: 5%;
+    margin: 3%;
+}
+
 /* define o tamanho da caixa */
 .container {
     margin: 0 auto;
@@ -348,6 +353,10 @@ header {
     max-width: 18rem;
     margin: 1rem;
     background-color: #63458a;
+}
+
+.secao-enedina__foto-grande{
+    width: 40vw;
 }
 
 .secao-enedina__citacao p {
