@@ -14,26 +14,19 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<!-- aqui colocamos as infos da pagina -->
-
 <body>
 
-    <!-- comecamos pela nav -->
     <nav class="navegacao">
 
-
-        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
-    de uma das classes em outra parte que seria o que eu quero fazer com container -->
         <nav class="navegacao__box container">
+
             <a class="navegacao__logo" href="index.html">
                 <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
             </a>
-            <div class="navegacao__itens" id="menuResponsivo">
+            <div class="navegacao__itens">
                 <div class="navegacao__nav">
                     <ul>
                         <li>
-                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
-                            a pasta que voces querem usar -->
                             <a href="../index.html">Home</a>
                         </li>
                         <li>
@@ -42,9 +35,6 @@
                     </ul>
                 </div>
 
-                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
-                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
-                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
                 <div class="navegacao__redes-sociais">
                     <a href="https://www.instagram.com/88flavi_ferraz/" target="_blank">
                         <img src="img/icon-instagram.png" alt="Ícone do Instagram">
@@ -55,9 +45,7 @@
                 </div>
         </nav>
 
-        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
-        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
-        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+        <div class="navegacao__menu-hamburguer">
             <a href="#">
                 <img src="img/menu-nav.png" alt="Menu de navegação">
             </a>
@@ -65,142 +53,200 @@
         </div>
     </nav>
 
-    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
     <header>
         <div class="container">
             <div class="principal">
                 <h1 class="principal__titulo">Oprah Winfrey</h1>
-                <h2 class="principal__sub">Da infância pobre e marcada por abusos, a uma das mulheres mais influentes do
-                    mundo!</h2>
+                <h2 class="principal__sub">Da infância pobre e de abusos a uma das mulheres mais influentes do mundo!
+                </h2>
                 <a class="principal__btn btn btn_roxo" href="https://www.youtube.com/shorts/iY-A4tZeVig" target="
-                ">Resumo de Sua História</a>
+                ">Veja o Vídeo</a>
             </div>
         </div>
     </header>
 
-
-    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
     <main>
         <section class="secao-diva container">
             <article>
-                <h3 class="secao-diva__titulo"> Oprah Winfrey</h3>
+                <h3 class="secao-diva__titulo">Oprah Winfrey</h3>
+
                 <nav class="btn nav_historia">
                     <a href="#infancia">Infância</a>
                     <a href="#juventude">Juventude</a>
-                    <a href="#famaesucesso">Fama e Sucesso</a>
+                    <a href="#famaesucesso">Fama e sucesso</a>
                 </nav>
+
                 <div class="secao-diva__introducao">
                     <div class="secao-diva__foto-perfil">
-                        <img src="../Flaviana/img/oprah header.jpg" alt="Foto da Oprah">
+                        <img src="../Flaviana/img/oprah header.jpg" alt="Foto de Bertha">
+                    </div>
+                    <p>
+                        Oprah Gail Winfrey é apresentadora, jornalista, atriz, psicóloga, empresária,
+                        repórter, produtora, editora e escritora norte-americana, vencedora de múltiplos prêmios
+                        Emmy por seu programa The Oprah Winfrey Show, o talk show com maior audiência da história da
+                        televisão norte-americana.<br>
 
-                    </div>
-                    <div>
-                        <p>
-                            Oprah Gail Winfrey, nasceu na cidade de Kosciusko, Mississipi, EUA, em 29 de janeiro de 1954. É apresentadora,
-                            jornalista, atriz, psicóloga, empresária, repórter, produtora, editora e
-                            escritora, vencedora de múltiplos prêmios Emmy por seu programa The Oprah
-                            Winfrey Show, o talk show com maior audiência da história da televisão norte-americana.
-                        </p>
-                    </div>
+                        Sua história traz como elemento fundamental a superação.
+                    </p>
                 </div>
+               
             </article>
 
             <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
             <article class="secao-diva__citacao">
-                <p>“Crie a melhor, a mais grandiosa visão possível para sua vida, porque você se torna aquilo que você acredita.” </p>
+                <p>"Crie a melhor, a mais grandiosa visão possível para sua vida, porque você se torna aquilo que você
+                    acredita."<br>
+                    <a href="https://www.pensador.com/frases_oprah_winfrey/">Mais frases inpiradoras de Oprah...</a>
+                </p>
             </article>
 
             <article class="secao-diva__historia">
                 <div>
                     <h4 class="secao-diva__titulo_esq secao-diva_subtitulo" id="infancia">Infância</h4>
-                    <p> Oprah Winfrey nasceu numa família batista. Seus pais eram um casal de
-                        adolescentes separados. O pai de Oprah estava nas Forças Armadas quando ela nasceu. Com uma
-                        gravidez inesperada, houve
-                        muitas brigas entre o casal: O pai de Oprah não queria ter filho naquele momento e nem tinha um
-                        namoro fixo com a mãe dela. Depois do nascimento, seu pai a registrou, apesar de não morar junto
-                        com a filha, raras vezes a visitava. A mãe de Oprah, já sozinha desde a gravidez, viajou para o
-                        norte dos EUA para trabalhar quando a menina completou poucos meses de vida, e assim Oprah
-                        passou os seis primeiros anos de vida longe da mãe, morando com a avó materna, Hattie Gail Mae.
-                        O pai raramente ia visitá-la, pois estava morando
-                        longe da cidade. A mãe lhe telefonava às vezes. A avó de Oprah ensinou-a a ler antes de ter
-                        cinco anos, e levava-a para a igreja, onde recebeu a alcunha "A Pregadora", pela habilidade de
-                        recitar versos da Bíblia. Quando Oprah era ainda criança, a avó batia-lhe muito se não soubesse
-                        cantar e recitar corretamente os versos bíblicos ou quando comportava-se mal de qualquer
-                        maneira.</p>
-                    <div class="inline">
-                        <img class="img_oprah" src="../Flaviana/img/oprah infancia.jpg"
-                            alt="Foto Oprah Criança">
+                    <p>Oprah Winfrey, nasceu em Kosciusko, Mississipi, Estados Unidos,
+                        no dia 29 de janeiro de 1954.</p>
 
-                        <p> Com seis anos, a mãe de Oprah voltou para buscá-la. Ela se mudou para um bairro humilde, na
-                            cidade de Milwaukee, com a mãe, que foi menos rigorosa para Oprah do que a avó
-                            tinha sido, em grande parte devido ao longo horário de trabalho, onde Oprah ficava o dia inteiro
-                            só em casa. Sua mãe a sustentava sozinha, já que seu pai lhe dava uma pensão muito pequena.</p>
+                    <p> pai de Oprah estava nas Forças Armadas quando ela nasceu. Com uma gravidez inesperada, houve
+                        muitas brigas entre o casal, já que seu pai não queria ter filho naquele momento e nem tinha um
+                        namoro fixo com a mãe dela.
+                    </p>
+                    <p>
+                        A mãe de Oprah, já sozinha desde a gravidez, viajou para o
+                        norte dos EUA para trabalhar quando a menina completou poucos meses de vida, e assim Oprah
+                        passou os seis primeiros anos de vida longe da mãe, morando num sítio, numa zona rural bastante
+                        pobre, com a avó materna.
+                    </p>
+
+                    <div class="inline">
+                        <img class="img_oprah" src="../Flaviana/img/oprah infancia.jpg" alt="Foto Oprah Criança">
+                        <p>
+                            A avó de Oprah ensinou-a a ler antes dos cinco anos, e levava-a para a igreja, onde
+                            recebeu a alcunha "A Pregadora", pela habilidade de recitar versos da Bíblia. Quando Oprah
+                            era ainda criança, a avó batia-lhe muito se não soubesse cantar e recitar corretamente os
+                            versos bíblicos ou quando comportava-se mal de qualquer maneira.</p>
+
                     </div>
 
-                    <p> Em 1963, aos nove anos de idade, Oprah passou a ser molestada por seu tio e seus primos
-                        adolescentes, que foram morar com ela e sua mãe. Eles batiam na
-                        menina, além de a estuprarem com frequência. Um grande trauma para Oprah que, ameaçada, nada
-                        podia relatar a mãe</p>
-
-                <div>
-                    <h4 class="secao-diva__titulo_esq secao-diva_subtitulo" id="juventude">Juventude</h4>
                     <p>
-                        Apesar da vida difícil, Oprah sempre se dedicou aos estudos, querendo mudar de vida. Cansada de
-                        sofrer abusos desde criança, Oprah terminou o ensino fundamental e fugiu de casa.
-
-                        Ao sair de casa, pôde contar com a ajuda de sua melhor amiga, que havia conhecido na escola,
-                        indo morar na casa dela. Quando fez catorze anos, já há seis meses morando com a amiga, conheceu
-                        seu
-                        primeiro namorado, um rapaz de dezoito anos, por quem se apaixonou perdidamente. Após três meses
-                        de namoro, Oprah descobriu-se grávida. O namorado não aceitou a gestação, e
-                        após agredi-la e tentar obrigá-la a abortar, a abandonou grávida, o que gerou uma profunda
-                        depressão na jovem.
+                        Com seis anos, a mãe de Oprah voltou para buscá-la. Ela se mudou para um bairro humilde, na
+                        cidade de Milwaukee, no Wisconsin com a mãe. Sua mãe a sustentava sozinha, já que seu pai
+                        lhe dava uma pensão muito pequena.
                     </p>
-                    <p>Aos sete meses de gestação entrou em trabalho de parto, e sofrendo muito, deu à luz de parto
-                        normal a um menino. Porém, o menino teve complicações por
-                        ser prematuro, e devido a má formação do pulmão, desenvolveu uma insuficiência respiratória,
-                        falecendo poucas horas após o nascimento. </p>
-                    
-                    <div class="inline">
-                        <p>Após tudo isso, a mãe a consolou, e Oprah decidiu mudar de estado, e saiu de Milwaukee, em
-                            Wisconsin, para morar com o pai em Nashville, no Tennessee. Oprah voltou a estudar, para
-                            terminar o ensino médio, e
-                            se tornou cada vez mais dedicada e popular.<br>
-                            <br>                            
-                            Após terminar o colégio, Oprah foi aprovada em um concurso de locução, que lhe garantiu uma bolsa
-                            de estudos na Universidade do Tennessee, uma universidade historicamente negra, onde estudou
-                            Comunicação Televisiva. Ela também atraiu o interesse da rádio local, WVOL, que a contratou para
-                            transmitir as notícias de plantão. Oprah trabalhou nessa rádio nos seus dois primeiros anos na
-                            faculdade.<br>
-                            <br>
-                            A escolha de Oprah pela mídia não surpreendeu sua família, em especial sua avó, que dizia que
-                            ela tinha o dom de falar em público. Oprah posteriormente reconheceu a influência da sua avó,
-                            dizendo que ela sempre a incentivou a falar em público "deu-me uma imagem positiva de mim
-                            mesma". Já trabalhando na mídia local, Oprah era a mais jovem e a única negra a ocupar o cargo
-                            de âncora
-                            de um jornal da cidade de Nashville.
+
+                    <p>
+                        Com nove anos, Oprah passou a ser molestada por seu tio e seus primos adolescentes que foram
+                        morar em sua casa. Por ser ameaçada, não contava para sua mãe.
+                    </p>
+
+                    <div>
+                        <h4 class="secao-diva__titulo_esq secao-diva_subtitulo" id="juventude">Juventude</h4>
+                        <p>Oprah dedicou-se aos estudos e com 13 anos passou em um teste e ganhou uma bolsa de estudos
+                            para ingressar na Nicolet High School, uma escola pública da cidade de Milwaukee.<br></p>
+
+                        <div class="inline">
+
+                            <p>
+
+                                Ao concluir o ensino fundamental, Oprah fugiu de casa e foi morar na casa de uma amiga.
+                                Com
+                                14 anos, ficou grávida do seu primeiro namorado que, além de agredi-la por nao desejar a
+                                gravidez, a abandonou. Seu filho nasceu prematuro
+                                e não sobreviveu.<br>
+                                <br>
+                                Oprah foi morar com seu pai em Nashville, no Tennessee e voltou a estudar quando mostrou
+                                habilidades para a oratória e para a recitação dramática. Foi considerada a aluna mais
+                                popular de sua escola.<br>
+                                <br>
+                                Apesar da vida difícil, Oprah Winfrey começou a ter seus talentos de comunicação
+                                reconhecidos, quando ganhou o concurso de locução na Universidade Estadual do Tennessee,
+                                onde estudava Comunicação e Artes Cênicas.
+                            </p>
+
+                            <img class="img_oprah" src="../Flaviana/img/oprah_juventude.jpg" alt="Foto Oprah Jovem">
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h4 class="secao-diva__titulo_esq secao-diva_subtitulo" id="famaesucesso">Fama e Sucesso</h4>
+                        <p>
+                            Em Nashville, Winfrey começou sua carreira como âncora num telejornal local. Em Baltimore,
+                            trabalhou no programa de entrevistas “People are Talking”, em 1978.
+</p>
+<p>
+                            Em 1983, Oprah mudou-se para Chicago e no ano seguinte liderou o “Talk Show AM Chicago” e
+                            logo conseguiu elevá-lo ao topo dos programas do canal WLS-TV.
+                        </p>
+                        <p>
+                            Em 1986 o programa foi estendido para uma hora de duração com o nome “The Oprah Winfrey
+                            Show”. Durante 25 anos ela apresentou o The Oprah Winfrey Show, talk show de maior audiência
+                            e
+                            sucesso da história da TV estadunidense e que acumulou uma série de premiações.
+                        </p>
+                        <p>
+                            Em 2011, ela decidiu se aposentar. Na época já era proprietária de diversos empreendimentos.
+                            Seus conceitos de como montar um negócio servem frequentemente como auxilio para pessoas que
+                            estão no ramo, principalmente seu mantra de “sonhar grande”.
+                        </p>
+                        <p>
+                            No dia 1 de janeiro de 2012, Oprah começou a apresentar seu novo programa, “Oprah’s Next
+                            Chapter”, quando entrevistou Steven Tyler, o vocalista da banda Aerosmith.
+                        </p>
+                        <p>
+                            No dia 7 de março de 2021, Oprah entrevistou o duque e a duquesa de Sussex, Harry e Meghan
+                            Markle, quando o casal falou sobre seu relacionamento com os membros da família real.
                         </p>
 
-                        <img class="img_oprah" src="../Flaviana/img/oprah_juventude.jpg"
-                            alt="Foto Oprah Jovem">
+                        <h5>Cinema</h5>
+                        <p> Oprah Winfrey atuou pela primeira vez no cinema, em 1985, no filme de Steven Spielberg, “A
+                            Cor Púrpura”, que lhe rendeu uma indicação ao Oscar de melhora atriz coadjuvante.
+                        </p>
+                        <p>
+                            Em 1986, ela atuou em Herança de Sangue ao lado de Matt Dillon. Atuou também em: Jogue a
+                            Mamãe do Trem (1987), Bem Amada (1998)Treze Homens e um Segredo (2007), O Mordomo da Casa
+                            Branca (2013), entre outros.
+                        </p>
+                        <p>
+                            Oprah emprestou sua voz para o ganso em A Menina e o Porquinho (2006), Bee Movie (2007), A
+                            Princesa e o Sapo (2009) da Walt Disney Animation Studios.</p>
+
+                        <h5>Editora e escritora</h5>
+                        <p> Oprah é dona das revistas, “The Oprah Magazine" e “At Home”, que conquistaram considerável
+                            sucesso no mercado de publicações femininas. Oprah ainda possui o domínio do site
+                            “Oprah.com”, criado por ela no intuito de transmitir ao público informações sobre seu
+                            programa e sua vida pessoal.
+                        </p>
+                        <p>
+                            Entre seus livros destacam-se “As coisas Que a Vida Me Ensinou” (2014) e “O Que É Que Lhe
+                            Aconteceu” (2021).</p>
+
+                        <p> Sua carreira de sucesso e a capacidade em empreender fizeram com que Winfrey se tornasse uma
+                            das pessoas mais ricas do mundo. Oprah foi a primeira mulher negra a figurar na lista da
+                            Forbes dos bilionários do
+                            mundo. Foi em 2002 sua
+                            primeira aparição nesse ranking.</p>
+
+                        <p>A trajetória de Oprah Winfrey a coloca entre as pessoas mais influentes do século XXI.<br>
+                            <br>
+                            <a class="videohistoriaoprah" href="https://www.youtube.com/watch?v=bxaQ2CmzKn4">(...Saiba mais aqui)</a>
+                        </p>
                     </div>
 
                 </div>
-
-                <div>
-                    <h4 class="secao-diva__titulo_esq secao-diva_subtitulo" id="famaesucesso">Fama e Sucesso</h4>
-                    <p>Com o passar dos anos, Oprah foi se destacando cada vez mais, fazendo parte de seletas listas
-                        como a de mulheres mais influentes do mundo e bilionárias (única negra entre as 25 primeiras) -
-                        <a href="https://www.youtube.com/watch?v=bxaQ2CmzKn4">(...Saiba mais aqui)</a> </p>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive"
+                        src="../Flaviana/img/Oprah-With-Meghan-and-Harry_-A-CBS-Primetime-Special-08_30_57-PM-1.webp"
+                        alt="Foto de Oprah em entrevista">
                 </div>
-
-            </div>
-            <div class="secao-diva__foto-grande">
-                <img class="img-responsive"
-                    src="../Flaviana/img/Oprah-With-Meghan-and-Harry_-A-CBS-Primetime-Special-08_30_57-PM-1.webp"
-                    alt="Foto de Oprah em entrevista">
-            </div>
             </article>
+        </section>
+
+        <section class="fontes_biblio">
+            <p>Fontes:</p>
+            <a href="https://pt.wikipedia.org/wiki/Oprah_Winfrey">Oprah Winfrey</a>
+            <a href="https://www.ebiografia.com/oprah_winfrey/">Oprah Winfrey: Apresentadora de TV
+                norte-americana</a>
+            <a href="https://www.suno.com.br/tudo-sobre/oprah-winfrey/">Biografia de Oprah Winfrey</a>
         </section>
 
         <aside class="secao-autora">
@@ -212,7 +258,7 @@
                 <div class="secao-autora__dados">
                     <p>Autora: Flaviana Ferraz</p>
                     <p>Desenvolvedora Front End</p>
-                    <a href="https://github.com/FlavianaFXT" target="_blank">Link para Github</a>
+                    <a href="https://github.com/FlavianaFXT" target="_blank">Github</a><br>
                     <a href="https://www.linkedin.com/in/flaviana-ferraz-frontend" target="_blank">Linkedin</a>
                 </div>
             </div>
@@ -224,10 +270,9 @@
 
     </main>
 
-    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+
     <footer class="rodape">
 
-        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
         <div class="rodape__principal container">
             <nav>
                 <ul class="rodape__navegacao">
@@ -240,7 +285,7 @@
                 <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
             </div>
 
-            <!-- separando a navegacao de menu e de redes sociais -->
+            
             <nav class="rodape__redes-sociais">
                 <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
                     <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
