@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Anna Clara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/thie.nunes/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/thielenunes/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Zélia Amador de Deus</h1>
+                <h2 class="principal__sub">Professora universitária, militante dos direitos da população negra,
+                    escritora, atriz e diretora de teatro. É uma das fundadoras do Centro de Estudos e Defesa do Negro
+                    do Pará.</h2>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://www.terra.com.br/diversao/primeira-reitora-negra-do-brasil-zelia-amador-de-deus-nao-para-de-lutar,b85de35ee5f7789ed6fdddc56012946czo90v57o.html">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Zélia Amador de Deus</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Anna-Clara/img/zelia2.jpg"
+                            alt="Foto de Zélia Amador de Deus">
+
+                    </div>
+                    <div>
+                        <p>
+                            Zélia nasceu no território quilombola de Mangueiras. Filha de empregada doméstica
+                            adolescente, Zélia Amador de Deus mudou-se para Belém quando tinha 15 anos e foi morar no
+                            bairro da Sacramenta. No início da década de 1970, começou a graduação no curso de
+                            licenciatura plena em Língua Portuguesa, na Universidade Federal do Pará. Embora tenha
+                            vivenciado episódios de racismo na infância e na adolescência, foi no espaço universitário
+                            que intensificou a militância no movimento negro. Foi vice-reitora da
+                            UFPA entre os anos de 1993 e 1997.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Eu tive que me construir e me reconstruir. Em dor, na minha ancestralidade, no amor, em Deus, em
+                    Deusas, no zelo e na luta. Sobretudo na luta. Tive que aprender a ser eu. E outras. E a me
+                    reconhecer na minha pele. Na minha cor. Precisei ter um nome. O meu nome.” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Antes de ingressar no curso de graduação, Zélia Amador de Deus já atuava nos movimentos sociais.
+                        Fez parte da Cruzada Mariana quando estudou no Instituto Catarina Labouré e do grupo de jovens
+                        da Paróquia São Sebastião. Participou do movimento secundarista e da Ação Popular (AP) até o
+                        momento que essa organização se fundiu com o Partido Comunista Brasileiro (PCB). Foi, então, que
+                        ingressou no VAR-Palmares em Belém. É uma das fundadoras do Cedenpa e foi por meio dessa
+                        organização que atuou em defesa do reconhecimento e titulação das terras das comunidades
+                        quilombolas no Pará. Zélia foi uma das representantes do Brasil na Conferência de Durban, da
+                        Organização das Nações Unidas (ONU), em 2001. Na UFPA, foi atuante na defesa das ações
+                        afirmativas para negros e participou da criação da “Lei de Cotas” (Lei nº 12.711/2012). Na
+                        UFPA, em parceira com outros professores, fundou o Núcleo de Estudos Afro-Brasileiros (NEAB) e o
+                        Grupo de Estudos Afro-amazônico (GEAM/UFPA). Em 2021 lançou sua obra "Caminhos Trilhados na Luta
+                        Antirracista"</p>
+
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Anna-Clara/img/zelia2.jpg" alt="Foto de Zélia Amador de Deus">
+                </div>
+                <div class="secao-obras">
+                    <h4 class="secao-diva__titulo secao-diva__titulo_esq">Obras, Titulos e homenagens</h4>
+                    <ul>
+                        <li>Título de Cidadã de Axé, AFAIA-Associação dos Filhos e Amigos do Ilê Iyà Omi Ásé Ofá Karè
+                            (2004);</li>
+                        <li>Reconhecimento de dedicação pela consolidação do Sindicato dos Docentes da UFPA - ADUFPA (2014)</li>
+                        <li>Título de Honra ao Mérito do Conselho Estadual de Segurança Pública do Estado do Pará (2014);</li>
+                        <li>Comenda Mãe Doca, da Assembleia Legislativa do Estado do Pará (2015);</li>
+                        <li>Título de professora emérita da UFPA (2019);</li>
+                        <li>Prêmio de Direitos Humanos da BrazilFoundation's Human Rights Award (Outubro de 2021);</li>
+                        <li>Intelectual homenageada no VIII Congresso Nacional de Pesquisadores/as Negros/as (2014);</li>
+                        <li>Homenagem feita pela escola de samba Os colibris de Belém;</li>
+                        <li>Escritora homenageada na 23ª Feira Pan-Amazônica do Livro e das Multivozes (setembro de 2019);</li>
+                        <li>Curta metragem Amador, Zélia, desenvolvido pela produtora Floresta Urbana;</li>
+                        <li>Prêmio de Direitos Humanos da BrazilFoundation.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/Anna Clara Andrade.jpg" alt="foto de Anna Clara Andrade">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Anna Clara Andrade</p>
+                    <p>Desenvolvedora Front-end</p>
+                    <a href="https://github.com/andradeannac" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
