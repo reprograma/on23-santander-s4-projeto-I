@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aileen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/de.vill__/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/aileen-azevedo-558625197/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Pitty</h1>
+                <h2 class="principal__sub">Priscilla Novaes Leone, mais conhecida pelo nome artístico Pitty, é uma
+                    cantora, compositora, produtora, escritora, empresária, apresentadora e multi-instrumentista
+                    brasileira.</h2>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo">Pitty!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_Pitty" src="../Aileen/img/pitty pb.jpg" alt="Foto da Pitty">
+
+                    </div>
+                    <div class="descrição">
+                        <p>
+                            Priscilla Novaes Leone nasceu na capital baiana, tendo apenas um único irmão, que é mais
+                            novo. Seu pai era músico e dono de um bar, já sua mãe trabalhava como vendedora de sapatos.
+                            Durante a infância, teve uma criação bastante livre por parte de seus pais, onde Pitty
+                            aproveitava a maior parte de seu tempo com brincadeiras na rua. Sua família, de origem
+                            humilde, morava no Centro de Salvador, em um pequeno apartamento alugado.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Tudo pode mudar. Eu pulei do penhasco e não sei se o paraquedas vai abrir. Mas se não abrir, também,
+                    tudo bem.” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Cantora desde os 17 anos de idade, Pitty iniciou sua carreira profissionalmente em 1997, atuando
+                        como baterista durante dois anos na banda de punk rock Shes; apesar de realizarem alguns shows,
+                        a banda não chegou a gravar nenhum álbum.</p>
+                    <p> Em 2002, Pitty recebeu um convite do músico e produtor Rafael Ramos, que tinha como intenção
+                        produzir seu primeiro álbum solo, vindo a aceitar o convite, assinando com a gravadora Deckdisc
+                        no mesmo ano, onde lançou em 2003 o seu primeiro single, "Máscara". A canção ganhou alta rotação
+                        nas rádios, em 7 de maio de 2003 lança seu primeiro álbum de estúdio solo, Admirável Chip Novo,
+                        vendendo 250 mil cópias e tornando-se o disco de estilo rock, mais vendido de 2003 no país.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Aileen/img/pitty colorida.jpg" alt="Foto da Pitty" height="450"
+                        width="600">
+                </div>
+                <div>
+                    <p>Considerada uma das maiores representantes do rock brasileiro contemporâneo e uma grande potência
+                        do rock dominando toda a cena há mais de 10 anos. Em sua carreira, venceu diversos prêmios
+                        importantes da música, incluindo o Melhores do Ano, Associação Paulista de Críticos de Arte,
+                        Prêmio Multishow de Música Brasileira e o MTV Video Music Brasil, além de concorrer quatro vezes
+                        ao Grammy Latino. Pitty também já se apresentou internacionalmente, tendo feito shows em países
+                        como Portugal, Estados Unidos, Argentina e Japão. Além de já ter se apresentado em festivais de
+                        grande projeção como Rock in Rio, Lollapalooza e João Rock. A cantora possui um patrimônio líquido
+                        estimado em mais de R$ 6 milhões, sendo inclusive, considerada em 2011, como uma das cantoras
+                        mais bem pagas do ano no país.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4kl9-Ca7jlc?autoplay=1&loop=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../Aileen/img/Aileen.jpeg" alt="foto Aileen">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Aileen</p>
+                    <p>Tech Recruiter</p>
+                    <a href="https://github.com/AileenDV" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Aileen @de.vill__</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
