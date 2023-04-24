@@ -291,7 +291,7 @@ Chegamos ao final! Este é uma revisão de base para você dá continuidade aos 
 
 ### VAMOS AO EXERCICIO PARA SEMANA, M DE MARAVILHOSA! Projeto 01
 
-* [Exercicio para casa](https://github.com/reprograma/on20-tet-s4-projeto-1/tree/main/exercicios/para-casa)
+* [Exercicio para casa](https://github.com/reprograma/on23-santander-s4-projeto-I/tree/main/exercicios)
 
 ### Material da aula 
 
