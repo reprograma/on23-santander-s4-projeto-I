@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Amanda Moura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Amanda Moura/CSS/style.css">
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="../Amanda Moura/imgs/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank"> Conheça a {reprograma} </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="../Amanda Moura/imgs/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="../Amanda Moura/imgs/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/reprogramabr/" target="_blank">
+                        <img src="../Amanda Moura/imgs/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/amanda-moura-dev/" target="_blank">
+                        <img src="../Amanda Moura/imgs/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="../Amanda Moura/imgs/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo"> Carla Akotirene </h1>
+                <h2 class="principal__sub"> AKOTIRENE é referência nos temas de pesquisas relacionados ao feminismo,
+                    racismo e homofobia.</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.youtube.com/watch?v=aHqBdXRf27A"> Saiba
+                    mais</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Carla Akotirene </h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_akotirene" src="../Amanda Moura/imgs/carla-akotirene-02052022-102807.png"
+                            alt="Foto da Carla">
+
+                    </div>
+                    <div>
+                        <p>
+                            Carla Akotirene é assistente social concursada, doutora estudos feministas pela Universidade
+                            Federal da Bahia. Autora dos livros “O que é interseccionalidade?”, pela Coleção Feminismos
+                            Plurais, coordenada por Djamila Ribeiro, e “Ó Paí Prezada! Racismo e sexismo tomando bonde
+                            nas penitenciárias femininas de Salvador”, ambos publicados pela Editora Jandaíra.
+                            É também é idealizadora da Opará Saberes, primeiro curso de extensão voltado a capacitacão
+                            de candidaturas negras ao mestrado e doutorado em universidades públicas.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“[...] o conhecimento deve ir além das demarcações fixadas por linhas imaginárias do horizonte e, finalmente, valer-se de raça, classe, território e gênero, mas enlanguescendo-se.”</p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p>Carla Akotirene estudou, entre 1998 e 1999, Patologia Clínica no Instituto Anísio Teixeira (IAT).
+                        Na alura, esteve envolvida nos seguintes projetos e ações: Núcleo de estudantes negras Matilde
+                        Ribeiro; Conselho de Desenvolvimento da Comunidade Negra; coordenação nacional da Campanha
+                        Contra o Genocídio da Juventude Negra/Bahia; conferências de igualdade racial, políticas para as
+                        mulheres e de juventude, tais como o Enjune – Encontro Nacional de Juventude Negra; pesquisa
+                        sobre violência letal e mapeamento de adolescentes e jovens que morrem em unidades de
+                        internamento; projeto Escola Plural, do Instituto Ceafro, coordenado por Nazaré Lima, Licia
+                        Barbosa, Valdecir Nascimento. Criou o Opará Saberes, para contribuir no ingresso de pessoas
+                        negras na pós-graduação em universidades públicas brasileiras. </p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Amanda Moura/imgs/AkotireneEDjamila.jpeg" alt="Foto da sua personalidade">
+                    <a class = "secao-diva_legenda" href="https://www.youtube.com/watch?v=KFncigGbDeE"> Interseccionalidade: Akotirene e Djamila </a>
+                </div>
+                <div>
+                    <p>Ela tirou o seu bacharelado em Serviço Social. E seu mestrado em Estudos Feministas
+                        (PPGNEIM/UFBA), onde pesquisou a interseccionalidade no Conjunto Penal Feminino de Salvador, e
+                        abordou a questão das mulheres no sistema prisional. No seu doutoramento em estudos de
+                        gênero, mulheres e feminismos, na Universidade Federal da Bahia (UFBA), Akotirene ela realiza um
+                        estudo comparativo entre as lógicas de racismo e sexismos institucionais nas prisões masculinas
+                        e prisões femininas, a partir do conceito da interseccionalidade.
+
+                        Em 2016, Akotirene foi referenciada pelo coletivo feminista Think Olga como uma das Mulheres
+                        Inspiradoras de 2016. A lista reúne nomes de mais de 200 mulheres, grupos e coletivos cujas
+                        contribuições em 2016, segundo o coletivo, "merecem ser reconhecidas, valorizadas e
+                        incentivadas".
+
+                       <p> Em 2017, foi indicada por Djamila Ribeiro ao Trip Transformadores como uma das "sete mulheres de
+                        ação que nos ajudam a repensar a sociedade". Nesse mesmo ano participou no evento "Diálogos
+                        Insubmissos de Mulheres Negras", em Salvador, Brasil, juntamente com outras mulheres negras
+                        convidadas para analisar a obra da escritora Conceição Evaristo.
+
+                       <p> Em setembro 2018, Akotirene lançou o seu primeiro livro autoral, "O que é Interseccionalidade?",
+                        através da Editora Letramento. A publicação faz parte coleção Feminismos Plurais, elaborado pela
+                        filósofa Djamila Ribeiro, e traz olhares e críticas ao conceito “Interseccionalidade”. No
+                        mesmo ano, apresentou a conversa Feminismos Plurais, na FLUPP, Feira Literária das Periferias,
+                        junto com Joice Berth, Juliana Borges e Silvio Almeida. A feira literária juntou mais de 80
+                        autores de países como Inglaterra, Camarões, França, EUA, Senegal e Brasil.
+
+                      <p> Ainda em 2018 foi uma das especialistas convidadas pela ONU Mulheres para partilhar a sua visão
+                        como especialista negra sobre temas como violência contra as mulheres negras; racismo nas
+                        cidades; mídia; trabalho decente e crescimento econômico; entre outros; e formas de o Brasil
+                        atingir os Objetivos de Desenvolvimento Sustentável (ODS). O evento ocorreu de 23 a 27 de julho,
+                        por meio da ação digital #MulheresNegrasNosODS, desenvolvida pela ONU Mulheres Brasil em
+                        parceria com o Comitê Mulheres Negras Rumo a um Planeta 50-50 em 2030.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive secao-autora_border" src="../Amanda Moura/imgs/AmandaMoura.jpeg" alt="foto da aluna Amanda">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Amanda Moura </p>
+                    <p>Desenvolvedora Front End</p>
+                    <a href="https://github.com/amanddmouraz" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="../Amanda Moura/imgs/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="../Amanda Moura/imgs/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

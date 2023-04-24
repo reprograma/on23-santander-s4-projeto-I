@@ -386,6 +386,9 @@ header {
 .secao-autora__foto {
   max-width: 150px;
 }
+.secao-autora_border{
+    border-radius: 100%;
+}
 
 .secao-autora__dados {
   color: #63458a;
