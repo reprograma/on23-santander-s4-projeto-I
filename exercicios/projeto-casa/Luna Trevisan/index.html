@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Luna Trevisan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/cyberlua7" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/cyberlua7/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/cyberlua7/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Rita Lee Jones</h1>
+                <h2 class="principal__sub"> Rita Lee Jones de Carvalho, conhecida como Rita Lee, é uma cantora, compositora, multi-instrumentista, atriz, escritora e ativista brasileira. É conhecida como a "Rainha do Rock Brasileiro".</h2>
+                <a class="principal__btn btn btn_roxo" href="https://globoplay.globo.com/v/11540378/?s=0s" target="_blank">Curiosidades</a>
+                
+
+            </div>
+
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Rita Lee!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Luna Trevisan/img/rita2.jpg" alt="Foto da Rita">
+
+                    </div>
+                    <div>
+                        <p>
+                            Rita Lee é uma cantora, compositora, multi-instrumentista e atriz brasileira. Ela nasceu em São Paulo em 31 de dezembro de 1947 e começou sua carreira musical na década de 1960 como integrante do grupo Os Mutantes, que foi uma das bandas mais importantes do movimento tropicalista.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>"Meu epitáfio será: nunca foi um bom exemplo, mas era gente fina!"</p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Rita Lee é cantora e compositora, considerada a rainha do rock nacional e um dos maiores nomes da música brasileira. Iniciou a carreira profissional nos anos 1960, como uma das primeiras mulheres a fazerem sucesso tocando guitarra. Integrou, com grande sucesso, o grupo Os Mutantes, de 1966 a 1972.</p>
+
+                    <p> Já conhecida nacionalmente, passou a fazer parte de outra banda, a Tutti Frutti, que durou de 1973 a 1978. Desde então, passou a figurar nas rádios com hits como Ovelha Negra, Mania de Você, Lança Perfume, Baila Comigo, entre outros sucessos. 
+                        Firmou-se como uma campeã de vendagens no país, com mais de 55 milhões de discos. </p>
+
+                        
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Luna Trevisan/img/rita3.jpg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>A trajetória solo, a partir de 1978, também seria marcada com uma parceria com o guitarrista Roberto de Carvalho, com quem é casada desde 1976. Antes, ela já havia se unido a Arnaldo Baptista, de 1968 a 1972. Ao longo da carreira, conciliou o rock com baladas românticas, canções de bossa nova e outros estilos.
+
+                        Pontualmente, fez trabalhos como atriz, escritora e integrou programas de TV. Com Roberto de Carvalho, teve três filhos: o cantor, compositor e guitarrista Beto Lee, além de João e Antônio, todos nascidos nos anos 1970. Anunciou sua aposentadoria em 2012, mas seguiu próxima dos fãs por meio das redes sociais.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../Luna Trevisan/img/luna1.jpg" alt="foto da aluna Luna">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Luna Trevisan</p>
+                    <p>Aluna Front-end</p>
+                    <a href="https://github.com/cyberlua" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Luna Trevisan</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
