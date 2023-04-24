@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Angelica Claudino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/angelicapclaudino/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/angelicapclaudino/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Francisca Maria.</h1>
+                <h2 class="principal__sub">A mãe da Angélica</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.metropoles.com/webstories/12-fatos-sobre-dona-ivone-lara-para-conhecer-no-centenario-da-sambista">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> </h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Angelica Claudino/img/meio.jpeg" alt="Francisca">
+
+                    </div>
+                    <div class="descrição">
+                        <p>
+                            Francisca Maria Pereira, uma paraibana de 63 anos.
+
+                            Pessoa muito simples, nascida no interior da Paraíba, na cidade de São Gonçalo.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>Meu exemplo vivo do que é o AMOR. </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Perdeu a mãe ainda quando criança, criada pela madrasta, não teve a experiência do amor de mãe.
+
+                        Mas deixa um verdadeiro rastro de amor por onde passa.</p>
+                    <p> Trata a todos muito sempre muito bem. Ver as pessoas como sendo seus irmãos, pais, filhos ou até mesmo netos, dependendo da idade e da situação.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Angelica Claudino/img/fim.jpeg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p> Muitas das adversidades que sofreu lhe renderam alguns traumas, que ainda hoje ela nãoconseguiu superar por completo. 
+
+                        Mas segue sendo para mim um grande exemplo de o quanto o amor consegue transformar para melhor.
+
+                    </p>
+
+                    <p>
+                        Espero algum dia conseguir amar 5% do que minha mãe ama...
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/Angelica.jpg" alt="foto Angel">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Angélica Claudino</p>
+                    <p>Estudante FrontEnd</p>
+                    <a href="https://github.com/angelicaclaudino" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito por Angélica Claudino</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
