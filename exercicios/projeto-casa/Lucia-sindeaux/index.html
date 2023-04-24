@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lúcia Sindeaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/LuciaSindeaux" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/_doidadosgatos/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucia-sindeaux/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Fernanda Montenegro</h1>
+                <h2 class="principal__sub">Fernanda Montenegro nasceu Arlete Pinheiro Esteves da Silva e adotou o nome
+                    artístico de Fernanda Montenegro logo no início de sua carreira, no rádio. É considerada a grande
+                    dama do cinema e da dramaturgia do Brasil. Foi a primeira latino-americana e a única brasileira
+                    indicada ao Oscar de Melhor Atriz, por seu trabalho em Central do Brasil (1998).</h2>
+                <a class="principal__btn btn btn_roxo" href="https://youtu.be/HZil9nvZs2M">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Fernanda Montenegro</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Lucia-sindeaux/img/foto01_fernanda.jpg"
+                            alt="Foto da Fernanda Montenegro">
+
+                    </div>
+                    <div>
+                        <p>
+                            Fernanda Montenegro é a grande dama da dramaturgia brasileira. A atriz é uma referência no
+                            teatro, no cinema e na televisão nacional. Fernanda começou sua carreira aos 15 anos, como
+                            redatora, locutora e radioatriz da Rádio MEC. Seu primeiro trabalho no teatro foi aos oito
+                            anos, em uma peça na igreja de seu bairro.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Tenho um otimismo realista, porque a condição humana é falha. Todos nós somos atores nesse palco que
+                    é o mundo.” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> O nome de batismo de Fernanda Montenegro é, na verdade, Arlette Pinheiro Esteves da Silva.
+                        Filha de uma dona de casa e um mecânico, a menina nasceu no bairro do Campinho, na zona norte do
+                        Rio de Janeiro.</p>
+                    <p> Com oito anos, a prodígio Arlette participou de uma peça na igreja, essa foi a sua estreia como
+                        atriz. Aos 15 anos, a jovem foi contratada como redatora, locutora e radioatriz da rádio MEC.
+                        Fernanda Montenegro foi a primeira atriz contratada da TV Tupi (no Rio de Janeiro), era o ano de
+                        1951. Na emissora, participou de cerca de 80 peças.
+                        No teatro, estreou em dezembro de 1950 ao lado do marido Fernando Torres. Anos mais tarde, em
+                        1959, com o marido e mais alguns amigos fundou a companhia Teatro dos Sete, que durou até 1965.
+                        A atriz estreou em 1963 na TV Rio em novelas de Nelson Rodrigues. Também participou da extinta
+                        TV Excelsior.
+                        Para além da televisão, Fernanda investiu muito na atuação no teatro e fez algumas participações
+                        no cinema. Ela chegou a concorrer ao Oscar pela atuação no filme Central do Brasil (1998), de
+                        Walter Salles Jr.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Lucia-sindeaux/img/foto02_fernanda.png"
+                        alt="Foto fernanda montenegro">
+                </div>
+                <div>
+                    <p>Fernanda Montenegro foi muitíssimo premiada nacional e internacionalmente ao longo da carreira.
+                        Seu primeiro prêmio, Saci, foi recebido em 1955. No ano a seguir, recebeu o prêmio da Associação
+                        Paulista de Críticos Teatrais.
+                        Em 1958, foi a vez do Prêmio Governador de Estado de São Paulo e novamente do prêmio da
+                        Associação Paulista de Críticos Teatrais.
+                        Em 1959, Fernanda leva para casa o Prêmio Padre Ventura do Círculo Independente de Críticos de
+                        Arte. Quatro anos mais tarde, acumula também o prêmio da Associação Brasileira de Críticos
+                        Teatrais.
+                        Em 1964, vence o Troféu Governador do Estado de São Paulo. Dois anos depois, tem a felicidade de
+                        ser agraciada com o Prêmio Molière, que irá receber novamente alguns anos mais tarde.
+                        Não é exagero dizer que a atriz recebeu ao longo da carreira todos os prêmios nacionais, além de
+                        cinco distinções internacionais.
+                        Vale sublinhar que Fernanda Montenegro foi a única atriz brasileira indicada ao Oscar pela
+                        participação no filme Central do Brasil, de Walter Salles Jr.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/lucia_sindeaux.jpg"
+                        alt="foto da aluna Lucia Sindeaux">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Lúcia Sindeaux</p>
+                    <p>Analista de QA Jr.</p>
+                    <a href="https://github.com/LuciaSindeaux" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

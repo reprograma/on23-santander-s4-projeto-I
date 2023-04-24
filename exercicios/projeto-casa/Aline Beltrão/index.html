@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aline Beltrão</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Ícone do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/salgadidoce/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/alinebeltrao/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divs representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquia -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Domitila Barros</h1>
+                <h2 class="principal__sub">Domitila é de recife, modelo, atriz e ativista social, além de ser a primeira mulher negra e imigrante Miss Alemanha.</h2>
+                <a class="principal__btn btn btn_roxo" href="">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo">Domidiva</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Aline Beltrão/img/domitila_close.png" alt="Foto da Ivone">
+
+                    </div>
+                    <div>
+                        <p>
+                            Domitila Barros nasceu no bairro Linha do Tiro, na região periférica do Recife, capital de Pernambuco. Seus pais sempre foram envolvidos em questões sociais, e antes mesmo da filha nascer, os dois criaram uma organização para atender crianças carentes da região, o Centro de Atendimento a Meninas e Meninos (Camm).   
+
+                            Hoje com 38 anos de idade, a pernambucana tem uma história de muita garra e luta por direitos e igualdade. Desde muito cedo Domitila esteve envolvida em causas sociais, tanto que aos 15 anos de idade ela recebeu o prêmio Sonhadores do Milênio, reconhecimento da Unesco.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“Não acho justo a Europa me aplaudir de pé e aqui ninguém saber que existo. Quero que se apropriem da minha história para fazer dela ferramenta de mudança na vida deles”</p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> 
+                        Com 13 anos de idade, Domitila começou a ser contadora de histórias na ONG. Ela começou a contar histórias para as crianças como uma forma de superar um grande trauma, a perda de um parente por bala perdida. Então, além de contadora de histórias, Domitila também deu aulas de alfabetização para crianças, e assim se engajando cada vez mais com a causa.
+                        A carreira de Domitila seguiu os ensinamentos que aprendeu em casa e por isso se formou em Serviço Social. No ano de 2006, graças ao seu trabalho social desempenhado desde a infância, ela ganhou uma bolsa de estudos para fazer um mestrado em Ciências Políticas e Sociais na Alemanha.
+
+                        “Cheguei lá sem saber falar alemão. Tudo que eu tinha era uma mala de 15 quilos e alguns sonhos. Meti a cara e fui simbora!” contou ao site do Gshow. E foi morando na Alemanha que ela teve outra grande oportunidade, foi descoberta por uma agência que a convidou para fazer uma novela alemã.
+                    </p>
+                    <p> 
+                        E os acontecimentos marcantes na vida de Domitila não param por aí. Em 2021, ela assistiu um comercial na televisão sobre o Miss Germany, que estava procurando mulheres. Não se tratava de um concurso de beleza padrão, mas também tinha foco no empoderamento, responsabilidade social.
+
+                        Desse modo, Domitila se candidatou e foi coroada Miss Alemanha 2022, aos 37 anos, sendo assim, a primeira mulher imigrante e negra a receber o título. 
+
+                        “O pessoal aqui na Alemanha me elegeu a Miss Alemanha pelo fato de que há 22 anos eu continuo nessa luta, continuo sonhando e continuo acreditando que um mundo melhor é possível. E eu me esforço muito com projetos sociais, fazendo ações de arrecadar doações, ações de natal, para poder, mesmo trabalhando como modelo e atriz aqui, sempre chamar atenção para os aspectos de sustentabilidade e igualdade social”, disse ela ao Bom Dia Pernambuco na época.
+                        </p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Aline Beltrão/img/domitila_linha.jpg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>Antes de se tornar atriz e modelo na Alemanha, Domitila morava no Brasil. Sendo assim, sempre esteve envolvida em causas sociais, principalmente a ONG fundada por seus pais. Ela fez faculdade de Serviço Social e depois ganhou uma bolsa de estudos na Alemanha, que foi quando ela começou a ser mais reconhecida, pelo menos por lá.
+                    
+                    O destaque maior veio quando ela foi consagrada Miss Alemanha em fevereiro do ano passado. Por aqui no Brasil, a oportunidade de reconhecimento vem com o Big Brother Brasil. Segundo ela, sua principal motivação é fazer sua história ser conhecida aqui também:
+
+                    “Não acho justo a Europa me aplaudir de pé e aqui ninguém saber que existo. Quero que se apropriem da minha história para fazer dela ferramenta de mudança na vida deles”, afirma ela. Além disso, ela entra no jogo para ganhar. E pretende usar o dinheiro do prêmio para ajudar sua família, comprar uma casa para sua mãe, além de ser inspiração para outras mulheres.
+
+                    “Eu acho que isso vai inspirar muitas outras mulheres que vão assistir ao programa, porque nós, mulheres empoderadas, vamos provar que com autenticidade, muita luta e força de vontade a gente alcança os objetivos”, disse Domitila.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/aline_beltrao.jpg" alt="foto de Aline Beltrão">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Aline Beltrão</p>
+                    <p>Desenvolvedora Frontend</p>
+                    <a href="https://github.com/alinebell" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
