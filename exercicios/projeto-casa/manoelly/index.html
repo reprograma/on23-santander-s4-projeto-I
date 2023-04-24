@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <title>Anália Franco</title>
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+  <!-- comecamos pela nav -->
+  <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+    <nav class="navegacao__box container">
+      <a class="navegacao__logo" href="index.html">
+        <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+      </a>
+      <div class="navegacao__itens" id="menuResponsivo">
+        <div class="navegacao__nav">
+          <ul>
+            <li>
+              <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+        <div class="navegacao__redes-sociais">
+          <a href="https://www.facebook.com/manoelly.maria" target="_blank">
+            <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+          </a>
+          <a href="https://twitter.com/maghinyfica" target="_blank">
+            <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+          </a>
+          <a href="https://www.instagram.com/manoellybernardo/" target="_blank">
+            <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/manoellybernardo/" target="_blank">
+            <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+          </a>
+        </div>
+    </nav>
+
+    <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+    <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+    <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+      <a href="#">
+        <img src="img/menu-nav.png" alt="Menu de navegação">
+      </a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+  <header>
+    <div class="container">
+      <div class="principal">
+        <h1 class="principal__titulo">Professora Anália Franco</h1>
+        <h2 class="principal__sub">Anália Franco foi uma importante educadora, escritora e ativista social brasileira, pioneira do movimento feminista no Brasil. Fundadora da Sociedade Propagadora da Instrução Popular em 1901 e da Legião Brasileira de Assistência em 1942, Anália Franco defendeu a igualdade de gênero e o acesso à educação para todos, deixando um legado significativo para a sociedade brasileira.</h2>
+        <a class="principal__btn btn btn_roxo" href="https://www.instagram.com/p/CqMAnO6Jy73/">Curiosidades</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+  <main>
+    <section class="secao-diva container">
+      <article>
+        <h3 class="secao-diva__titulo">A Grande Dama da Educação Brasileira</h3>
+        <div class="secao-diva__introducao">
+          <div class="secao-diva__foto-perfil">
+            <img class="img-reponsive img_ivone" src="./img/analia-franco.jpeg" alt="Foto da Ivone">
+
+          </div>
+          <div>
+            <p>
+              Anália Franco foi uma professora, jornalista, poetisa e filantropa brasileira. À frente de
+              seu tempo, enfrentou os preconceitos e o machismo para defender a igualdade entre mulheres e homens,
+              negros e brancos e principalmente o direito à educação. Sua luta incansável pelos direitos das mulheres e
+              pela educação deixou um legado importante para a sociedade brasileira, e sua história continua a inspirar
+              pessoas até os dias de hoje.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+      <article class="secao-diva__citacao">
+        <p>“A verdadeira caridade não é acolher o desprotegido, mas promover-lhe a capacidade de se libertar.” </p>
+      </article>
+
+      <article class="secao-diva__historia">
+        <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+        <div>
+          <p>
+            Em 1853 nasceu Anália Emília Franco, em uma família católica. Filha do paulista Antônio Mariano Franco
+            Junior e da pernambucana Teresa Emília de Jesus.
+          </p>
+          <p>
+            Até completar oito anos de idade, morou em Resende, no Rio de Janeiro, cidade onde nasceu, e foi educada por
+            sua mãe, que era professora. No ano de 1861, mudou-se para o Estado de São Paulo com sua família, morando
+            em diversas cidades, principalmente do interior.
+          </p>
+          <p>
+            Em 1868, aos 15 anos, iniciou o magistério e, mais tarde, recebeu permissão para ser professora primária.
+            Na época, trabalhava como auxiliar de sua mãe, que também se dedicava a essa profissão.
+          </p>
+          <p>
+            Em 1872, foi aprovada em um concurso de Câmara na capital, mas preferiu ficar no interior. Essa decisão
+            deu-se principalmente porque, no lugar, optou por abraçar uma causa social e compadecer-se de um problema
+            que cresceu por conta da Lei do Ventre Livre, aprovada em 28 de setembro de 1871. Com essa lei,
+            tornavam-se livres todos os filhos de mulheres escravas nascidos a partir daquele ano, mas estes ficariam
+            sob o domínio dos senhores de suas mães até os oito anos completos — o que resultava em abusos e descaso por
+            parte dos fazendeiros, que não tinham interesse em cuidar dessas crianças por não terem nenhum retorno
+            financeiro com isso.
+          </p>
+          <p>
+            Diante dessa situação, Anália mobilizou-se e assumiu a causa desses desamparados, que eram expulsos das
+            fazendas logo cedo e, muitas vezes, tornavam-se mendigos. Assim, ela usava seu talento de escritora para
+            redigir cartas para as mulheres fazendeiras, pedindo para que amparassem essas crianças abandonadas e
+            necessitadas. Ao mesmo tempo, também criava um local para acolhê-las, a Casa Maternal.
+          </p>
+          <p>
+            O local onde foi instalada a Casa Maternal, a primeira escola pública criada por Anália Franco, foi
+            oferecido por uma das fazendeiras a quem ela escrevia cartas pedindo ajuda pelas crianças, filhas de
+            escravas, que estavam desamparadas. A casa ficava em Jacareí, no norte do estado de São Paulo, e tinha
+            sido cedida gratuitamente pela proprietária, mas sob uma condição: "não misturar negros e brancos". Anália
+            não aceitou a proposta e recusou a oferta, passando, portanto, a pagar um aluguel pela casa e recebendo
+            qualquer criança nela, sem segregação ou distinção racial. Mesmo recebendo um pagamento por sua residência,
+            a fazendeira não gostou da ousadia da professora e alegou que o local estava sendo transformado em um
+            albergue. Recorrendo ao prestígio de seu marido, um coronel respeitado, a mulher conseguiu a remoção de
+            Anália de lá.
+          </p>
+          <p>
+            Diante da situação, a professora resolveu ir para a cidade de São Paulo, onde alugou uma velha casa com seu
+            próprio dinheiro e anunciou no Jornal Local a existência do abrigo. A despesa custou a metade de seu
+            salário, não sobrando o suficiente para a alimentação das crianças. Sendo assim, não hesitou em ir
+            pessoalmente pedir esmolas nas ruas.
+          </p>
+          <p>
+            "O comportamento, insólito para a época, de uma professora espírita proteger negros, filhos de escravos,
+            pedir esmolas pelas ruas em pleno regime monarquista, católico e escravocrata, gera um clima de antipatia e
+            rejeição entre os moradores da região ante a figura daquela mulher considerada perigosa, e seu afastamento
+            da cidade já é cogitado, quando surge um grupo de abolicionista e republicano a seu favor"
+          </p>
+          <p>
+            Em 1888 e 1889, com o decreto da abolição da escravatura e a proclamação da República no Brasil, o trabalho
+            de Anália avançou ainda mais e ela conseguiu construir dois colégios gratuitos para meninos e meninas. No
+            mesmo ano, ela ainda criou uma revista própria, o "Álbum das Meninas" — após já ter feito contribuições a
+            revistas femininas, como "A Família", "A Mensageira" e "O Eco das Damas" — e foi também nesta época que
+            fixou-se na capital paulista, passando a morar lá definitivamente.
+          </p>
+          <p>
+            Em 1901, fundou a Associação Feminina Beneficente e Instrutiva, de apoio às mulheres e crianças, que levou
+            até o final de sua vida, em 1919. Contou com o apoio de vinte senhoras e inaugurou-o no dia 17 de novembro
+            daquele ano.
+          </p>
+          <p>
+            Com esse projeto, construiu ainda mais escolas maternais e primárias e criou o Albergue Diurno
+            para os Filhos de Mães Jornaleiras, um dos braços da AFBI, além de creches, bibliotecas, escolas
+            noturnas, oficinas profissionalizantes, asilos, liceus, abrigos, centros de atendimento médico e
+            oficinas.
+          </p>
+          <p>
+            Em 1902, inaugurou o Liceu Feminino, destinado a instruir e preparar professoras para a direção e a educação
+            em suas escolas. Durante os cursos, publicou inúmeros livros, folhetos e tratados sobre a infância e o
+            processo pedagógico, como O Novo Manual Educativo, que também tratava sobre a adolescência e juventude.
+          </p>
+          <p>
+            Em 1903, passou a publicar uma revista mensal, A Voz Maternal.
+          </p>
+          <p>
+            Em 1911, conseguiu adquirir, mesmo sem recursos financeiros, a Chácara Paraíso, 75 alqueires de terra que
+            pertenciam ao padre Diogo Antônio Feijó, que se tornou regente do Império do Brasil de 1835 a 1837. Nesse
+            espaço, fundou a Colônia Regeneradora D. Romualdo, com o objetivo de regenerar centenas de mulheres
+            consideradas "desviadas", como prostitutas ou que engravidavam "fora das convenções", por exemplo.
+          </p>
+        </div>
+        <div class="secao-diva__foto-grande">
+          <img class="img-responsive" src="./img/analia-franco-sentada-com-suas-alunas.jpg"
+            alt="Foto da sua personalidade">
+        </div>
+        <div>
+          <h3 class="secao-diva__titulo secao-diva__titulo_esq">Importância Social</h3>
+          <p>
+            Apesar de viver em um período que as mulheres tinham pouco espaço na vida pública e pouca voz diante da
+            sociedade, Anália destacou-se por seu trabalho e sua intensa luta por seus ideais, que eram considerados
+            contrários ao pensamento da época escravocrata e segregacionista em que vivia. No início, decidiu abraçar
+            a causa abolicionista e dedicou grande parte da sua vida a atividades socioeducacionais voltadas às
+            crianças, principalmente negras, filhas de escravas, abandonadas após a promulgação da Lei do Ventre Livre,
+            em 1871. Mais tarde, estendeu seus projetos às mulheres trabalhadoras, pobres ou marginalizadas pela
+            sociedade, aos órfãos e aos necessitados, até seu falecimento em 1919.
+          </p>
+          <p>
+            Anália foi de muita importância para a defesa da igualdade étnica, à educação livre e popular, à
+            alfabetização, à mudança no sistema de ensino e ao combate do patriarcalismo por meio da profissionalização
+            e da possibilidade de participação da mulher em âmbito social, elevando-a a uma posição de igualdade perante
+            os homens e dando-lhe autonomia.
+          </p>
+          <p>
+            Em suas produções literárias, sempre ressaltava a importância da educação para todos como uma forma de
+            progresso ao Brasil e da libertação da mulher, para torná-la independente, principalmente quanto ao papel de
+            mãe e esposa imposto pela sociedade, além de sempre declarar suas convicções sociais e políticas diante dos
+            assuntos da época.
+          </p>
+          <p>
+            Outro diferencial dos projetos sociais de Anália Franco é que ela sempre buscava capacitar os atendidos e
+            não acomodá-los. Portanto, buscava de todas as formas a educação, o ensino profissional e o desenvolvimento
+            da possibilidade de aprender, crescer e construir uma vida própria. Assim, eles eram inseridos na sociedade,
+            de forma que pudessem também participar dela. Isso fazia com que não houvesse apenas a formação teórica
+            dessas pessoas, mas também uma transformação da realidade destes.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="secao-autora">
+      <div class="container">
+        <div class="secao-autora__foto">
+          <img class="img-responsive" src="../img_alunas/manoelly.jpg" alt="foto da {aluna} Manoelly">
+        </div>
+        <div class="secao-autora__dados">
+          <p>Autora: Manoelly Bernardo</p>
+          <p>Desenvolvedora Frontend</p>
+          <a href="https://github.com/ManoellyBernardo" target="_blank">Link para Github</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="secao-cta">
+      <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+    </div>
+
+  </main>
+
+  <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+  <footer class="rodape">
+
+    <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+    <div class="rodape__principal container">
+      <nav>
+        <ul class="rodape__navegacao">
+          <li>
+            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="rodape__logo">
+        <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+      </div>
+
+      <!-- separando a navegacao de menu e de redes sociais -->
+      <nav class="rodape__redes-sociais">
+        <a href="https://www.linkedin.com/in/manoellybernardo/" target="_blank">
+          <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+        </a>
+      </nav>
+
+    </div>
+
+    <div class="rodape__cc">
+      <p>Creative Commons 2023 | Feito com amor por Manoelly</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

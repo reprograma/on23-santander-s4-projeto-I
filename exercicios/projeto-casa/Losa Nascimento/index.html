@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Losa Nascimento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/losanascimento/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Liniker</h1>
+                <h2 class="principal__sub">Primeira cantora trans brasileira a receber um Grammy Latino, premiação mais
+                    importante da música latina, pela categoria de ‘Melhor Álbum de Música Popular Brasileira’ pelo
+                    disco Indigo Borboleta Anil. </h2>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://www.metropoles.com/webstories/12-fatos-sobre-dona-ivone-lara-para-conhecer-no-centenario-da-sambista">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> A artista</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img_liniker" src="../Losa Nascimento/img/lnikerbonita.jpg" alt="Foto da Liniker">
+
+                    </div>
+                    <div>
+                        <p>
+                            Liniker de Barros Ferreira Campos (Araraquara, 3 de julho de 1995), conhecida como
+                            simplesmente Liniker é uma cantora, compositora, atriz e artista visual brasileira e
+                            ex-integrante da banda Liniker e os Caramelows. Também compõe e canta músicas de gênero soul
+                            e black music.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Tudo começou com um Sol” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Em 2015, formou a banda Liniker e os Caramelows, com quem lançou o EP Cru em 15 de outubro
+                        daquele ano, por meio do primeiro single, "Zero".Os vídeos com a interpretação das canções
+                        do projeto ganharam milhões de visualizações rapidamente. Em 16 de setembro de 2016, a
+                        banda lança seu álbum de estreia, intitulado Remonta, gravado com ajuda dos fãs por meio do
+                        financiamento coletivo no Catarse. O disco reverberou internacionalmente e ganhou atenção da
+                        imprensa estrangeira.
+
+                        Depois de dois anos, no dia 22 de Março de 2019, Goela Abaixo, o segundo álbum da banda é
+                        lançado, tendo as músicas Calmô e Intimidade. Conta com a participação de Mahmundi em Bem Bom.
+                        Lava foi o primeiro single, lançado em março de 2018.</p>
+                    <p> No início de 2020 em uma entrevista à Rolling Stone, Liniker e Barone, baixista e produtor do
+                        grupo, anunciam a separação de Liniker e os Caramelows[13] após cinco anos juntos para
+                        "iniciarem projetos paralelos".
+
+                        Em 9 de Setembro de 2021, Liniker lança seu primeiro álbum solo, Indigo Borboleta Anil, que
+                        conta com as colaborações de Milton Nascimento e Tassia Reis. A música "Presente" surgiu com uma
+                        versão diferente da lançada anteriormente pelo Studio COLORS em 16 de dezembro de 2019. "Baby
+                        95" e "Psiu" também são singles que vieram a público em momento anterior, mas hoje completam o
+                        seu novo álbum.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Losa Nascimento/img/linikergrammy.jpg" alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>Em 2022 tornou-se a primeira artista transgênero do Brasil a ganhar um Grammy Latino. Muito
+                        emocionada, Liniker subiu ao palco do Mandalay Bay Events Center, em Las Vegas, nos Estados
+                        Unidos, para receber o prêmio. “Sou uma cantora, compositora e atriz brasileira. Hoje, algo
+                        histórico acontece na história do meu país: é a primeira vez que uma artista transgênero ganha
+                        um Grammy”, disse Liniker, em espanhol, ao ser aplaudida de pé pelo público.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-losa" src="../img_alunas/20220724_095714.jpg" alt="foto da aluna Losa">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Losa Nascimento</p>
+                    <p>Desenvolvedora Front end</p>
+                    <a href="https://github.com/losanascimento" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

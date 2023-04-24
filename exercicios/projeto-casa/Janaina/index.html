@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thiele Nunes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/soaresalmeidajanaina/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/janaina-ant%C3%B4nia-soares-almeida-72321035" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Luiza Helena Trajano</h1>
+                <h2 class="principal__sub">Luiza Helena Trajano é a empresária que está a frente da holding Magazine
+                    Luiza, tornou uma das maiores redes de varejo do Brasil.</h2>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://www.linkedin.com/search/results/all/?keywords=luiza%20helena%20trajano&origin=GLOBAL_SEARCH_HEADER&sid=%2CRD"
+                    target="_blank">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Luiza Helena Trajano</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Janaina/img/Luiza-Helena1024x683.jpeg"
+                            alt="Foto da Ivone">
+
+                    </div>
+                    <div>
+                        <p>
+                            Sob a gestão de Luiza Helena Trajano, a empresa cresceu e alcançou a marca de mais 1000
+                            lojas do
+                            Magazine Luiza, distribuídas em 16 estados do Brasil, o e-commerce e um quadro com mais de
+                            35 mil funcionários e 23 centros de distribuiçāo. Hoje, a empresa está sob comando de seu
+                            filho Frederico Trajano.
+                            <br>
+                            O resultado inspirador:
+                            <br>
+                            Coube a Luiza transformar a empresa familiar na gigante do varejo, que foi responsável por
+                            uma das maiores altas da história da bolsa de valores brasileira.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“A gente tem mania de pensar pobre e traçar coisas pequenas. E pobreza atrai pobreza. Tenha metas
+                    ousadas.” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p>Luiza Trajano é natural de Franca, no interior de São Paulo. Ela nasceu em 9 de outubro de 1951.
+                        <br>
+                        A ex-presidente do Magazine Luiza começou a vida profissional ainda criança, aos 12 anos: na
+                        época, ela abriu mão de suas férias escolares para auxiliar como balconista na loja dos tios,
+                        chamada Cristaleira – um pequeno comércio que vendia lembrancinhas.
+                        <br>
+                        Para escolher um novo nome para o estabelecimento, a tia de Luiza criou um concurso na rádio
+                        para que os moradores de Franca pudessem opinar.
+                        <br>
+                        O que ninguém sabe:
+                        <br>
+                        Devido a isso, a Cristaleira foi rebatizada para Magazine Luiza – em homenagem a dona, a tia de
+                        Luiza, que tinha o mesmo nome.
+                        <br>
+                        Ao completar 18 anos de idade, Luiza Helena começou a trabalhar de maneira efetiva no comércio
+                        da família.
+                        Formada em direito pela Faculdade de Direito de Franca, ela atuou em diversos setores do
+                        Magazine Luiza, como o de venda e o de cobrança.
+                    </p>
+
+                    <p> Onde tudo começou:
+                        <br>
+                        O início para alcançar o posto mais alto da empresa veio em 1991, quando sua tia lhe avisou que
+                        estava na hora de ela assumir os negócios.
+                        <br>
+                        Em 1992, ela começou a modernizar a empresa através de uma série de inovações. Com a ajuda de um
+                        vendedor, o cliente ia até uma unidade do Magazine Luiza e, pelo computador, comprava
+                        mercadorias que não estavam expostas. A ação recebeu o nome de Lojas Virtuais.
+                        <br>
+                        Para driblar as baixas vendas do mês de janeiro, ela implementou uma das ações da loja (que é
+                        destaque até hoje) nas manchetes de jornais: A Liquidação Fantástica.
+                        <br>
+                        Com descontos significativos, os produtos de mostruários são vendidos e levados pelos
+                        compradores na hora.
+                        <br>
+                    </p>
+
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Janaina/img/luizamagalu.jpeg" alt="Foto da sua personalidade">
+                </div>
+
+                <p>
+                    Em 2008, Luiza Helena Trajano se tornou a presidente da rede. Frederico Trajano, um dos filhos da
+                    Luiza Trajano, sucedeu o cargo de CEO em 2016.
+                    <br>
+                    O trabalho de Luiza fez com que o Magazine Luiza se transformasse em case de sucesso na Harvard
+                    Business School.
+                    <br>
+                    Durante o governo de Dilma Rousseff, a ex-presidente do Brasil chegou a convidar Luiza Helena
+                    Trajano para assumir o Ministério da Micro e Pequenas Empresas. Trajano refutou o convite por não
+                    querer se envolver no meio político.
+                    <br>
+                    Além das atividades que exerce no Magazine Luiza,Luiza Helena Trajano lidera o Grupo Mulheres do
+                    Brasil – formado por profissionais que atuam em diversos segmentos da economia.
+                </p>
+                <article class="secao-diva__citacao">
+                    <p>“Errar, todo mundo erra. Você precisa dar espaço para que um novo erro aconteça. O importante é
+                        redirecionar o erro rapidamente.” </p>
+                </article>
+
+                <div>
+                    <p> Como a empresa cresceu tanto:
+
+                        A razão de tamanho crescimento foi a transformação da varejista tradicional em um e-commerce,
+                        vendendo seus produtos tanto no site da companhia quanto em um aplicativo próprio.
+                        <br>
+                        A companhia permite que outras empresas anunciem seus produtos através de seu marketplace, fato
+                        que tem a colocado entre os principais players dentro do varejo no Brasil.
+                        <br>
+                        Atualmente, a Magalu possui diversos serviços financeiros, como o LuizaSeg (venda de seguros), o
+                        LuizaCred (serviços financeiros) e Consórcio Luiza (venda de consórcios).
+                        <br>
+                    </p>
+                    <p>
+                        A empresa também iniciou uma política de aquisições bastante relevante, comprando empresas como
+                        a Netshoes (e-commerce de artigos esportivos), Zattini (e-commerce de roupas), LogBee
+                        (aplicativo de entregas), Época Cosméticos (perfumaria e cosméticos), Estante Virtual (loja
+                        online de livros usados), Jovem Nerd (portal de conteúdo geek) além de outras startups e redes
+                        locais de varejo.
+                        <br>
+                        Não é só no lucro e nas operações que a empresa se destaca: a Magazine Luiza tem, entre seus
+                        programas para funcionários, uma iniciativa inovadora: um disk denúncia para que as
+                        trabalhadoras denunciem caso sejam vítimas de violência doméstica.
+                        <br>
+                        Ações como essas e outras, voltada para o bem estar de seus funcionários, renderam à gigante do
+                        varejo citações nas listas de melhores empresas para trabalhar da revista Exame.
+
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../Janaina/img/janaina.jpeg" alt="foto Janaina">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Thiele Nunes</p>
+                    <p>Desenvolvedora Mobile</p>
+                    <a href="https://github.com/JanainaSoares" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Janaina Soares @JanainaSoares</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
