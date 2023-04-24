@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Marcia Dias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/thie.nunes/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/thielenunes/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Lia de Itamaracá</h1>
+                <h2 class="principal__sub">Lia de Itamaracá é a rainha da ciranda no Brasil. A dançarina, compositora e
+                    cantora Maria Madalena Correia do Nascimento nasceu na Ilha de Itamaracá, no Pernambuco, em 1944.
+                </h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.youtube.com/watch?v=SwjaFirCFXw">Assista </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo">Lia de Itamaracá</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="../Marcia Dias/img/liadeitamaracafoto.webp"
+                            alt="Foto da Lia">
+
+                    </div>
+                    <div>
+                        <p>
+                            Lia de Itamaracá é a rainha da ciranda no Brasil. A dançarina, compositora e cantora Maria
+                            Madalena Correia do Nascimento nasceu na Ilha de Itamaracá, no Pernambuco, em 1944. Começou
+                            a cantar aos 12 anos e desde então se tornou uma das maiores representantes da cultura
+                            popular pernambucana. Lia lançou 4 álbuns, participou de diversas produções cinematográficas
+                            e tem 3 biografias publicadas.
+                            </br>
+                            É considerada a mais célebre cirandeira do Brasil.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Minha ciranda não é minha só, ela é de todos nós.”</p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> A artista Lia sempre morou na Ilha de Itamaracá e ainda criança começou a participar de rodas de
+                        ciranda. Trabalhou como merendeira em uma escola pública da ilha.
+                        Ficou conhecida por Lia nos anos 1960, depois que Teca Calazans, incorporando versos cantados
+                        pela cirandeira, acrescentou: </p>
+                    <p>
+                        "Esta ciranda quem me deu foi Lia,
+                        que mora na Ilha de Itamaracá". Gravou seu primeiro disco em 1977, intitulado A rainha da
+                        ciranda. </p>
+                    </p>
+
+                    <p>Em 1998 participou do Abril pro Rock, o que a fez ser famosa nacionalmente.
+                        Gravou Eu sou Lia em 2000, que foi distribuído também na França.
+                        Em 2001, Lia de Itamaracá levou a sua ciranda a Paris, onde lançou o CD “Eu Sou Lia”
+                        e onde fez várias apresentações.</p>
+
+                    <p>Participou do curta-metragem Recife Frio do cineasta pernambucano Kleber Mendonça Filho. No
+                        filme Lia aparece cantando sua famosa ciranda "Eu Sou Lia, Minha Ciranda e Preta Cira" vestida
+                        com roupas de frio na praia de Itamaracá.</p>
+
+                    <p>2013, participou como personagem principal do curta-metragem documental Formiga Come do Que
+                        Carrega, do diretor Tide Gugliano.</p>
+
+                    <p>Em 2019, participou do filme Bacurau, de Kleber Mendonça Filho. Seu álbum Ciranda Sem Fim foi
+                        eleito um dos 25 melhores álbuns brasileiros do segundo semestre de 2019 pela Associação
+                        Paulista de Críticos de Arte.</p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Marcia Dias/img/show-itamaraca.webp" alt="Foto do show">
+                </div>
+                <div>
+                    <h3 class="secao-diva__titulo secao-diva__titulo_esq">Reconhecimento</h3>
+                    <p> ° Lia de Itamaracá é Patrimônio Vivo de Pernambuco. A titulação é conferida pelo Governo de
+                        Pernambuco o objetivo de estimular e proteger iniciativas que contribuem para o desenvolvimento
+                        sociocultural e profissional dos mestres e das mestras de notório saber e grupos culturais,
+                        tradicionais e populares do Estado de Pernambuco, almejando a transmissão de seus conhecimentos
+                        e de suas técnicas. Nos últimos anos, Lia tem participado de festivais e eventos que tratam do
+                        repasse de sua sabedoria às novas gerações.</p>
+                    <p> ° Foi agraciada com a Ordem do Mérito Cultural pelo Ministério da Cultura.</p>
+                    <p> °No dia 27 de agosto de 2019, Lia recebeu uma das maiores honrarias de toda sua trajetória
+                        artística: o título de Doutora Honoris Causa, pela Universidade Federal de Pernambuco, pelos
+                        serviços prestados à cultura de Pernambuco e do Brasil.</p>
+                    <p> °Diva da música negra - denominação dada pelo The New York Times.</p>
+                    <p> °Em 2003, a cineasta carioca Karen Akerman começou registrar a vida da cirandeira, para um
+                        documentário que pretende realizar, sob o mesmo título de CD de Lia.</p>
+                    <p> °Em reconhecimento de seu trabalho a promoveu o seu registro como Patrimônio Vivo de Pernambuco.
+                        E o Governo Federal, através do Ministério da Cultura, a premiou com a medalha do Mérito
+                        Cultural.</p>
+                    <p>°Reconhecida como doutora honoris causa pela Universidade Federal de Pernambuco - UFPE.</p>
+                    <p>°Em 2020, foi homenageada pelo Bloco Afro Ilú Oba De Min, em seu tradicional cortejo de
+                        carnaval.</p>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <div class="blocos">
+
+            <a href="https://www.youtube.com/@LiadeItamaracaOFICIAL"><img src="../Marcia Dias/img/4.png"
+                class="blocos"></a>
+            <a href="https://open.spotify.com/artist/7dtjhTXpBQ4cCf2GPLG6Qo?si=CacX3t8ySNKyePLBd2X8Ng&nd=1/"><img
+                    src="../Marcia Dias/img/1.jpg" class="blocos"></a>
+            <a href="https://https://www.instagram.com/liadeitamaracaoficial/"><img src="../Marcia Dias/img/2.jpg"
+                    class="blocos"></a>
+            <a href="https://www.cepe.com.br/lojacepe/lia-de-itamaraca-nas-rodas-da-cultura-popular?search=lia%20de%20itamaraca"><img src="../Marcia Dias/img/3.png"
+                    class="blocos"></a>
+            
+
+
+        </div>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/marcia_dias.jpg" alt="foto da Marcia">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Marcia Dias</p>
+                    <p>Especialista em E-commerce</p>
+                    <a href="https://github.com/magaspe" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
