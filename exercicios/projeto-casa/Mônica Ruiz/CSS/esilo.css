@@ -1,0 +1,274 @@
+
+
+.cabeçalho{
+
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    background-color:  #644484;
+   
+
+}
+
+.foto7{
+
+  height: 100px;
+  width: 104px;
+  padding-top: 30px;
+  padding-left: 150px;
+  align-items: center;
+}
+
+.redes{
+
+    text-align: right;
+    color: white;
+    font-size: 100px;
+    gap: 30px;
+    align-items: center;
+   display: inline-flex;
+   padding-right: 30px;
+}
+
+
+a{
+
+    color: white;
+    font-size: 18px;
+    font-family: Gill Sans;
+    justify-content: center;
+   
+  
+
+}
+
+a:hover{
+
+    color:#f6089a;
+}
+
+
+.nome {
+
+
+  
+    max-width: 1400px;
+    max-height: 10vh;
+    height: 2%;
+    width: auto;
+    background: linear-gradient(rgba(255, 0, 255, 0.2),
+            rgba(255, 0, 255, 0.2)),
+        url(../IMG/Lélia_Gonzalez_by_Cezar_Loureiro.jpg);
+    background-size: cover;
+    background-position: center 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    text-align: end;
+    justify-content: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+    font-size: 300%;
+    align-items: end;
+    padding-top:900px;
+    color: white;
+
+}
+
+
+
+    nav {
+
+
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: white;
+        font-size: 2.5rem;
+        gap: 200px;
+        text-align: center;
+       
+    }
+    
+    
+    main {
+    
+    
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    
+    button {
+
+        margin-top: 2%;
+        color: white;
+        background-color: blueviolet;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        align-items: center;
+        border-radius: 20%;
+        gap: 100px;
+    
+    
+    }
+    
+
+    article {
+
+        font-weight: bold;
+        border: 1px solid #63458a;
+        text-align: center;
+        padding: 1rem;
+        font-size: 15px;
+        color: blueviolet;
+        align-items: center;
+        align-items: end;
+        margin-top: 3%;
+        padding: 50px;
+        display: inline-flex;
+        width: 900px;
+    }
+    
+
+section{
+
+background-color: white;
+color: blueviolet;
+font-size: 16px;
+justify-content: center;
+text-align: justify;
+padding: 5px;
+}
+
+img{
+
+
+   
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+
+p{
+
+    display: flex;
+    justify-content: right;
+    max-width: 1200px;
+    max-height: 9500px;
+    justify-content: center;
+}
+
+.barra{
+
+    background-color: pink;
+    height: 100px;
+    width: auto;
+    border: pink;
+    display: flex;
+    justify-content:space-between;
+   align-items: center;
+   
+}
+
+ul{
+
+    justify-content: center;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #f6089a;
+    display: flex;
+
+}
+
+ul:hover{
+
+    color: blueviolet;
+}
+.foto4 {
+
+
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+ .facebook{
+
+
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: end;
+        gap: 70px;
+        max-width: 60px;
+        max-height: 60px;
+        align-items: center;
+        justify-content:right;
+    
+
+ }
+    
+    .linkedin{
+
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: end;
+    gap: 70px;
+    max-width: 60px;
+    max-height: 60px;
+    align-items: center;
+    justify-content: right;
+
+ 
+
+
+ }
+
+ footer{
+
+
+    justify-content: center;
+    align-items: end;
+    color: blueviolet;
+    font-size: 18px;
+    height: 60px;
+    padding-top: 50px;
+
+    
+
+ }
+
+ 
+
+ @media (max-width: 750px){
+
+
+    body{
+
+        
+        height: auto;
+        display:table-cell;
+    justify-content: center;
+    text-align: justify;
+    font-size: 2rem;
+  padding-left: 0%;
+  margin-left: 0%;
+    }
+
+
+}
+

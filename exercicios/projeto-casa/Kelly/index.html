@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kelly Oliveira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="../Kelly/css/style.css"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+    <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->        
+    <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="../img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar --> 
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! --> 
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="../img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="../img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/kelly_amenduuim/" target="_blank">
+                        <img src="../img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kelly-rodrigues-de-oliveira-21178132/" target="_blank">
+                        <img src="../img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+            <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+            <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+                <a href="#">
+                    <img src="../img/menu-nav.png" alt="Menu de navegação">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner --> 
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Cleusa de Oliveira (Tia Cleusa)</h1>
+                <h2 class="principal__sub">Mãe solteira de três filhos, sempre batalhou pelo bem dos filhos e quem mais pudesse ajudar.</h2>
+                <a class="principal__btn btn btn_roxo" href="https://www.metropoles.com/webstories/12-fatos-sobre-dona-ivone-lara-para-conhecer-no-centenario-da-sambista">Curiosidades</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  --> 
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Tia Cleusa!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img-cleusa" src="../Kelly/img/FB_IMG_1681684195761.jpg" alt="Foto da Cleusa">
+
+                    </div>
+                    <div class="secao-diva__paragraph">
+                        <p>
+                            Tia Cleusa nasceu em 1968, em Iacri, no interio de São Paulo.
+
+                            Trabalhou na indústria metalúrgica, como doméstica, organizando excursões e agora autônoma. Morou durante anos na zona sul de São Paulo, mas para ter a paz e o sossego para criar seus filhos foi morar em uma cidade na Grande São Paulo chamada Embu Guaçu.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class --> 
+            <article class="secao-diva__citacao">
+                <p>“Preconceito já basta o que ela pode encontrar na rua, na minha casa eu quero respeito.” </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div >
+                    <p class="paragrafo-justificado">Cleusa de Oliveira nasceu em Iacri, no interior de São Paulo no dia 22 de julho de 1968,  mas foi registrada em 1 de setembro do mesmo ano. Filha caçula de um lavrador 
+                        e de uma dona de casa vindos da Bahia.</p>
+
+                    <p>Veio embora para São Paulo quando tinha 9 anos, seus irmãos mais velhos já estavam aqui. Quando tinha 13 anos perdeu o pai. 
+                        Em fevereiro de 1989 nasce sua primeira filha Kelly, José Henrique o filho do meio, nasceu em março de 1992. Em dezembro de 1997 Cleusa se muda para uma pequena cidade da grande São Paulo 
+                        chamada Embu Guaçu e em agosto de 1998 nasceu o seu filho caçula Vitor. </p>
+                </div>
+                
+                <div >
+                    <p class="paragrafo-justificado">Tia Cleusa era muito conhecida por fazer excursões, quando resolveu parar seu filho José Henrique abriu uma agência de viagens com o nome Excursões Tia Cleusa.
+                        Tia Cleusa também é conhecida pelo seu jeito acolhedor, prestativo, por sua empatia e por seu amor a vida, seu amor e atenção aos pequenos momentos que a vida proporciona. Tia Cleusa tem um coração imenso, que sempre ajuda o próximo.
+                    </p>
+                </div>
+            </article>
+           
+        </section>
+        <section class="sectionPhotos">
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <div class="slide-show">
+                <ul class="slides-list" >
+                    <li class="slide" >
+                        <img class="photos" src="./img/comNetos.jpg" />
+                        <p>Tia Cleusa com os netos.</p>
+                    </li>
+                    <li class="slide" >
+                        <img class="photos" src="./img/comFilhos.jpg" />
+                        <p>Tia Cleusa com os filhos.</p>
+                    </li>
+                    <li class="slide" >
+                        <img class="photos" src="./img/comIrmaos.jpg" />
+                        <p>Tia Cleusa com os irmãos e a Tia Alzira (única tia viva).</p>
+                    </li>
+                    <li class="slide" >
+                        <img class="photos" src="./img/foto antiga.jpg" />
+                        <p>Tia Cleusa com a família (foto antiga).</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive" src="../img_alunas/Kelly.jpg" alt="foto da Kelly">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Kelly Oliveira</p>
+                    <p>Desenvolvedora Front-End</p>
+                    <a href="https://github.com/Kelly-Oliveira" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="../img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/in/ReprogramaBr/" target="_blank">
+                    <img src="../img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Kelly Oliveira @kelly_amenduuim</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

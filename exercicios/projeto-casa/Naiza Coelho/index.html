@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Naiza Coelho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="shortcut icon" href="./Img/img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="Img/img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="Img/img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="Img/img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/naiicoelho/" target="_blank">
+                        <img src="Img/img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/naiza-coelho-5808a4211/" target="_blank">
+                        <img src="Img/img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Marielle Franco</h1>
+                <h2 class="principal__sub">Mulher, negra, mãe, favelada, Marielle Franco foi a quinta vereadora mais
+                    votada no Rio de Janeiro, nas eleições de 2016, com 46.502 votos.</h2>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://g1.globo.com/podcast/o-assunto/noticia/2023/03/13/o-assunto-918-marielle-franco-5-anos-do-assassinato.ghtml">Entenda o caso</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Marielle Franco!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_ivone" src="./Img/marielle-presente.jpg" alt="Foto da Marielle">
+
+                    </div>
+                    <div>
+                        <p>
+                            Marielle Franco era socióloga formada pela PUC-Rio e mestra em Administração Pública pela
+                            Universidade Federal Fluminense(UFF). Nascida em 27 de julho de 1979, foi uma ativista
+                            politica dos direitos humanos principlamente em prol dos direitos das mulheres negras e
+                            comunidade LGBTQIAP+.
+                            Participou efetivamente de organizações da sociedade civil, como Brasil Foundation e o
+                            Centro de Ações Solidárias da Maré (Ceasm). Marielle se denominava "Cria da Maré" uma das
+                            comunidades que compõem o complexo da Maré no Rio de Janeiro, mulher favelada, negra e parte
+                            da comunidade LGBTQIAP+.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Ser mulher negra é resistir e sobreviver o tempo todo”
+
+                </p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Marielle começou sua militância em direitos humanos após ingressar no pré-vestibular comunitário
+                        e perder uma amiga que foi vítima de uma bala perdida em tiroteio entre policiais e traficantes
+                        no complexo da Maré. Coordenou a Comissão de Defesa dos Direitos Humanos e Cidadania da
+                        Assembleia Legislativa do Rio de Janeiro (Alerj) e construía diversos coletivos e movimentos
+                        feministas, negros e de favelas. Aos 19 anos, se tornou mãe de uma menina. Isso a ajudou a se
+                        constituir como lutadora pelos direitos das mulheres e debater esse tema nas favelas.
+
+                        Eleita em 2016 como vereadora para um mandato de 4 anos que não conseguiu concluir devido a seu
+                        assassinato. Marielle Franco estava, na noite de 14 de março de 2018, voltando de um evento em
+                        que palestrava sobre negritude, representatividade e feminismo, na região do Estácio, bairro
+                        central do Rio de Janeiro. Treze disparos de uma metralhadora 9mm atingiram o carro em que ela
+                        estava. Anderson Pedro Gomes, motorista do veículo, foi atingido por tiros nas costas e também
+                        faleceu.</p>
+                    <p> Mas O legado deixado por Marielle vive, após sua morte, cinco projetos de lei de autoria de
+                        Marielle Franco foram aprovados. São eles: </p>
+
+                    <ol type="1">
+                        <li>Espaço Coruja (PL 17/2017): acolhimento noturno às crianças com mães que trabalham ou
+                            estudam;</li>
+                        <li>Inclusão do Dia de Tereza de Benguela (PL 103/2017);</li>
+
+                        <li>Assédio não é passageiro (PL 417/2017): criação de uma campanha de enfrentamento ao assédio
+                            e violência sexual em espaços públicos;</li>
+                        <li> Dossiê Mulher Carioca (PL 555/2017): compilado de dados de atendimento do sistema municipal
+                            sobre a violência contra a mulher;</li>
+                        <li>Assistência técnica pública e gratuita para habitações de interesse social (PL 642/2017).
+                        </li>
+                    </ol>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Naiza Coelho/Img/franco-marielle.jpg"
+                        alt="Foto da sua personalidade">
+                </div>
+                <div>
+                    <p>As perguntas "quem matou Marielle?"" e "quem mandou matar Marielle?" se tornaram slogans
+                        nacionais para justiça de casos de mulheres e pessoas negras.
+                        A vereadora criticava fortemente a brutalidade estatal, social e, sobretudo policial, contra
+                        pessoas faveladas, negras e LGBTQIAP+. Frente a essa pauta, Marielle vocalizou na Câmara um
+                        discurso
+                        fortemente contrário a Intervenção Federal no Rio, a qual, em 2018, encerrou mais de 1000 vidas
+                        em apenas dez meses.
+                        O caso Marielle, como ficou conhecido, foi notícia no mundo todo e gerou diversas manifestações
+                        que, depois de anos após o acontecido, continuam pedindo justiça e buscando manter seu legado
+                        vivo.
+
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive img-autora" src=".//Img/Foto autora.jpeg" alt="foto da autora Naiza">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Naiza Coelho</p>
+                    <p>Estudante de Front-end da Regrograma</p>
+                    <a href="https://github.com/naizacoelho" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="Img/img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
+                    <img src="Img/img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - prof Thiele Nunes @thie.nunes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

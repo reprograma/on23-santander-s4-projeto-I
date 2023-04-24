@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ingrid Sterphane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- aqui colocamos as infos da pagina -->
+
+<body>
+
+    <!-- comecamos pela nav -->
+    <nav class="navegacao">
+
+
+        <!-- aqui eu coloquei duas classes, por que cada uma delas puxa uma estilizacao no css, eu fiz desse formato por que posso replicar a estilizacao
+    de uma das classes em outra parte que seria o que eu quero fazer com container -->
+        <nav class="navegacao__box container">
+            <a class="navegacao__logo" href="index.html">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="navegacao__itens" id="menuResponsivo">
+                <div class="navegacao__nav">
+                    <ul>
+                        <li>
+                            <!-- nao esquecam de colocarem o caminho certo aqui, coloquem no inicio o .. e vao selecionando
+                            a pasta que voces querem usar -->
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- antes que me perguntem "prof, nao tem muita div?" Tem! hahahah lembra que eu disse que div nao e errado? as tags novas criadas com o html 
+                semantico sao pra termos organizacao e facilitar na hora de chamar as coisas no css. mas isso nao significa que nao
+                vamos usar divs nunca mais. MAS voce pode usar sections tambem! -->
+                <div class="navegacao__redes-sociais">
+                    <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                        <img src="img/icon-facebook.png" alt="Íconde do Facebook">
+                    </a>
+                    <a href="https://twitter.com/ReprogramaBr" target="_blank">
+                        <img src="img/icon-twitter.png" alt="Ícone do Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/reprogramabr/" target="_blank">
+                        <img src="img/icon-instagram.png" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
+                        <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                    </a>
+                </div>
+        </nav>
+
+        <!-- divis representam divisoes, html sao blocos. quando precisamos fazer uma boa organizacao essa seria a chave mas sem esquecer a hierarquiva -->
+        <!-- nessa caso a dive foi criada para mexermos com responsividade -->
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+            <a href="#">
+                <img src="img/menu-nav.png" alt="Menu de navegação">
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nosso header esta aqui, nele tem as informacoes que ficam na frente do banner -->
+    <header>
+        <div class="container">
+            <div class="principal">
+                <h1 class="principal__titulo">Nísia Floresta</h1>
+                <h2 class="principal__sub">Em 12 de outubro de 1810 nascia Nísia<br> Floresta Brasileira Augusta,
+                    pseudônimo<br>de Dionísia Gonçalves Pinto</h2>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://www.uol.com.br/ecoa/amp-stories/nisia-floresta-quem-foi-a-primeira-escritora-feminista-brasileira/"
+                    target="_blank">👀infos+</a> <br>
+                <a class="principal__btn btn btn_roxo"
+                    href="https://open.spotify.com/episode/6SZNNrD78f48fKNzvAMkdC?si=6dRS2flfTjCoRRDZzcTAuQ"
+                    target="_blank">⏯PLAY</a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- aqui no nosso main, coloquei as infos para darmos destaque no site, no caso eu coloquei TODO o meu conteudo  -->
+    <main>
+        <section class="secao-diva container">
+            <article>
+                <h3 class="secao-diva__titulo"> Nísia Floresta!</h3>
+                <div class="secao-diva__introducao">
+                    <div class="secao-diva__foto-perfil">
+                        <img class="img-reponsive img_nisia" src="../Ingrid/img/nisia.png" alt="Foto da Nísia">
+
+                    </div>
+                    <div>
+                        <p>
+                            Sua cidade natal, Papari, no Rio Grande do Norte, agora leva seu nome. A educadora,
+                            escritora e poetisa viveu ainda em diferentes estados brasileiros e na Europa e é
+                            considerada a primeira feminista brasileira.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- aqui eu poderia ter usado tag de citacao tambem, mas por conta da estilizacao usei um p no article com uma class -->
+            <article class="secao-diva__citacao">
+                <p>“Acrescentemos agora ao medíocre número dessas escolas a confusão dos métodos, das doutrinas seguidas
+                    pelas professoras, quase sempre discordes em seus sistemas e, como já observamos, em grande parte
+                    sem as necessárias habilitações, e teremos, reduzido à expressão mais simples, o número da nossa
+                    população feminina que participa do ensino público e o grau de instrução que recebe.” (FLORESTA,
+                    1989b, p.83)</p>
+            </article>
+
+            <article class="secao-diva__historia">
+                <h3 class="secao-diva__titulo secao-diva__titulo_esq">Sua História</h3>
+                <div>
+                    <p> Nascida em 1810, em Papari, no Rio Grande do Norte, Dionísia era filha de um advogado português
+                        com uma rica herdeira da região. Ao lado de três irmãos, a menina cresceu acostumada com
+                        mudanças, já que o antilusitanismo crescia cada vez mais.<br>
+                        <br>
+                        Aos sete anos, a pequena entrou para o convento das carmelitas, onde recebeu aulas de clássico
+                        manual e canto. Diferente das outras alunas, entretanto, ela também sentia-se atraída pelos
+                        livros da biblioteca, paixão que sempre foi incentivada pelo pai liberalista.<br>
+                        <br>
+                        Quando completou treze anos, a menina foi obrigada a casar-se com um rico proprietário de
+                        terras, conforme as normas sociais da época. Poucos meses depois do matrimônio, todavia,
+                        Dionísia rompeu com seu esposo e fugiu de volta para casa.
+                    </p>
+                    <p> Anos mais tarde, em 1828, a jovem passou por um período triste em sua vida, repleto de luto e
+                        saudade. Por fazer parte de um levante contra a poderosa família Cavalcanti, influente na elite
+                        de Olinda, onde moravam na época, o pai de Dionísia foi assassinado.<br>
+                        <br>
+                        Três anos depois, no entanto, ela finalmente descobriu aquele que parecia ser seu papel no
+                        mundo. Motivada por seu amor pela literatura, a jovem assumiu o nome Nísia e passou a escrever
+                        para o jornal O Espelho das Brasileiras, editado em Recife.<br>
+                        <br>
+                        Segundo Antônio Carlos de Oliveira Itaquy, que escreveu um estudo sobre a autora, Nísia acabou
+                        escolhendo seu pseudônimo por diversos motivos. “Floresta” porque esse era o nome da fazenda
+                        onde nasceu, "Brasileira" pelo orgulho do país e "Augusta" em homenagem ao seu grande amor, o
+                        acadêmico Manuel Augusto de Faria Rocha.<br>
+                        <br>
+                        Em seus textos, a escritora falava sobre as condições de vida das mulheres, além de defender a
+                        educação feminina em ambas às esferas cívicas e moral. No total, o jornal para o qual ela
+                        escreveu teve 30 edições. Todas elas contaram com Nísia como redatora.
+                    </p>
+                </div>
+                <div class="secao-diva__foto-grande">
+                    <img class="img-responsive" src="../Ingrid/img/foto2.png" alt="Fotos do seu passado">
+                </div>
+                <div>
+                    <p> Dos primeiros textos no jornal, Nísia se apaixonou pela arte de escrever e, em pouco tempo,
+                        lançou sua primeira obra. Publicado em 1832, o livro da educadora chama-se “Direito das Mulheres
+                        e Injustiça dos Homens”. Hoje, discute-se sobre a teoria de que a obra era baseada em
+                        “A Vindication of the Rights of Woman”, de Mary Wollstonecraft. Existe ainda a ideia de que
+                        Nísia teria traduzido literalmente o livro “La femme n'est pas inferieure a l'homme”, publicado
+                        em 1750.<br>
+                        <br>
+                        Independentemente da inspiração, a obra da brasileira foi considerada um ícone da literatura da
+                        época. Mas Nísia se recusou a parar por aí. Assim, o foco dela passou a ser a educação de
+                        meninas, que, até então, aprendiam apenas a cuidar da casa.<br>
+                        <br>
+                        Em meados de 1838, o pioneirismo feminista de Nísia extrapolou as
+                        barreiras literárias e se expandiu para um contexto sociocultural. Isso porque, naquele ano, ela
+                        fundou o Colégio Augusto, um dos primeiros do país exclusivos para meninas.<br>
+                        <br>
+                        Ainda que as jovens não fossem proibidas de estudar, elas costumavam receber aulas de bordado,
+                        canto e etiqueta. Nas mãos de Nísia, porém, meninas e adolescentes brasileiras passaram a
+                        estudar matemática, português e história.<br>
+                        <br>
+                        Defensora da emancipação feminina, que chegou a publicar um livro sobre o tema em 1853, Nísia
+                        mudou-se para a Europa, em meados da década de 1840. Por lá, ela publicou diversos artigos, mas
+                        também ficou sob a mira daqueles que não concordavam com seus ideais e, assim, ela caiu no
+                        esquecimento.<br>
+                        <br>
+                        Foi apenas décadas mais tarde, no final do século 20, com o trabalho de mulheres como Zahidé
+                        Muzart e Constância Duarte que a história de Nísia voltou à tona. Falecida na França, aos 74
+                        anos, a potiguar voltou a ser lembrada.<br>
+                        <br>
+                        Apesar de ter morrido em meados de 1885, devido à um quadro de pneumonia, o corpo da primeira
+                        autora feminista do Brasil chegou em terras tropicais apenas em 1954. Hoje, a Nísia está
+                        enterrada na cidade onde nasceu.<br>
+                        <br>
+                        Em homenagem à mulher que tudo mudou no século 19, inclusive, o município de Papari hoje
+                        chama-se Nísia Floresta. É um dos únicos lugares no Brasil onde a memória de uma das precursoras
+                        do feminismo e defensora da educação feminina no país ainda pulsa.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="secao-autora">
+            <div class="container">
+                <div class="secao-autora__foto">
+                    <img class="img-responsive-aluna" src="../img_alunas/Ingrid.jpg" alt="foto de ingrid">
+                </div>
+                <div class="secao-autora__dados">
+                    <p>Autora: Ingrid Sterphane</p>
+                    <p>Desenvolvedora Web</p>
+                    <a href="https://github.com/ingridsterphane" target="_blank">Link para Github</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="secao-cta">
+            <a class="btn btn_roxo btn_center" href="../index.html#mulheres-maravilhosas">Ver todas elas</a>
+        </div>
+
+    </main>
+
+    <!-- toda propriedade aqui, tem uma class, pensando na estilizacao do css -->
+    <footer class="rodape">
+
+        <!-- no footer temos mais uma div, por que temos mais de uma info na div -->
+        <div class="rodape__principal container">
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li>
+                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+
+            <!-- separando a navegacao de menu e de redes sociais -->
+            <nav class="rodape__redes-sociais">
+                <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
+                    <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="rodape__cc">
+            <p>Creative Commons 2023 | Feito com amor por Reprograma - Ingrid Sterphane @ingridsterphane</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
