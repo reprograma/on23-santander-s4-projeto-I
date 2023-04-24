@@ -34,52 +34,11 @@ li {
   list-style: none;
 }
 
-/* define que as imagens tem que ter o tamanho máximo da div mãe */
-.img-responsive {
-  width: 100%;
-}
-
 /* define o tamanho da caixa */
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-}
-
-/* --- estilos do botao --- */
-
-.btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 1rem 3rem;
-  border-radius: 5px;
-  font-size: 1.8rem;
-}
-
-.btn_roxo {
-  color: white;
-  background-color: #c083b9;
-  display: block;
-  max-width: 250px;
-  text-align: center;
-  transition: all 0.5s;
-  margin: 0 auto;
-}
-
-.btn_roxo:hover,
-.btn_roxo:focus {
-  transform: translateY(-1rem);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgb(192, 156, 188);
-}
-
-.btn_roxo:active {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn_center {
-  margin: 0 auto;
 }
 
 /* --- estilos da navegacao --- */
@@ -143,6 +102,9 @@ li {
 .navegacao__nav {
   margin-bottom: 3rem;
   margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navegacao__nav li {
@@ -154,12 +116,58 @@ li {
   margin: 0 1rem;
 }
 
+.navegacao__redes-sociais img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* --- estilos do botao --- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+
+.btn_roxo {
+  color: white;
+  background-color: #c083b9;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn_center {
+  margin: 0 auto;
+}
+
 /* --- estilos de navegacao header --- */
 header {
   min-height: 80vh;
   height: 500px;
   background: linear-gradient(rgba(255, 0, 255, 0.2), rgba(255, 0, 255, 0.2)),
-    url(../img/donaInove.jpeg);
+    url(../img/FB_IMG_1681684938823.jpg);
   background-size: cover;
   background-position: center 14%;
   background-repeat: no-repeat;
@@ -348,6 +356,11 @@ header {
   background-color: #63458a;
 }
 
+.secao-diva__paragraph {
+  display: flex;
+  text-align: justify;
+}
+
 .secao-diva__citacao p {
   font-weight: bold;
   border: 1px solid #63458a;
@@ -360,11 +373,60 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0;
 }
 
-.img_ivone {
+.paragrafo-justificado {
+  text-align: justify;
+}
+
+.img-cleusa {
   max-width: 120%;
+}
+
+.photos {
+  height: 40rem;
+  width: auto;
+}
+
+.sectionPhotos {
+  text-align: center;
+}
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list {
+  --selected-item: 0;
+}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list {
+  --selected-item: 1;
+}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list {
+  --selected-item: 2;
+}
+
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list {
+  --selected-item: 3;
+}
+
+.slide-show {
+  overflow: hidden;
+}
+
+.slides-list {
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slide {
+  width: 100%;
 }
 
 /* --- AUTORA --- */
@@ -410,6 +472,7 @@ header {
 
 /*** MEDIA QUERIES - Aqui tem toda responsividade da aplicacao ***/
 /* TABLET */
+
 @media (min-width: 768px) {
   /* --- NAV --- */
   .navegacao__itens {
