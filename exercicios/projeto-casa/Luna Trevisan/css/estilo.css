@@ -1,19 +1,9 @@
-/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
-/* --- GERAL --- */
-/*
-unidades preferidas para esse CSS
-margin, padding: rem
-font-size: rem
-width: %
-max-width: % ou px
-*/
-
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 10px; /* definir uma font-size padrão */
+    font-size: 10px;
 }
 
 body {
@@ -22,8 +12,8 @@ body {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -34,66 +24,61 @@ li {
     list-style: none;
 }
 
-/* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
     width: 100%;
 }
 
-/* define o tamanho da caixa */
 .container {
     margin: 0 auto;
-    width: 100%;
     max-width: 960px;
+    width: 100%;
 }
 
-/* --- estilos do botao --- */
-
 .btn {
-    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.8rem;
     font-weight: bold;
     padding: 1rem 3rem;
-    border-radius: 5px;
-    font-size: 1.8rem;
-    font-family: 'Source Sans 3', sans-serif;
+    text-transform: uppercase;
 }
 
 .btn_roxo {
-    color: white;
     background-color: #C083B9;
+    color: white;
     display: block;
+    margin: 0 auto;
     max-width: 250px;
     text-align: center;
     transition: all .5s;
-    margin: 0 auto;
 }
 
 .btn_roxo:hover,
 .btn_roxo:focus {
-    transform: translateY(-1rem);
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
     background-color: rgb(192, 156, 188);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-1rem);
 }
 
 .btn_roxo:active {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     transform: translateY(-.5rem);
-    box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
 .btn_center {
     margin: 0 auto;
 }
 
-/* --- estilos da navegacao --- */
 .navegacao {
     background-color: #674582;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
     color: rgb(254, 254, 254);
-    text-transform: uppercase;
-    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
-    padding: 1.5rem;
-    z-index: 99;
-    position: fixed;
-    width: 100%;
     font-weight: boldho;
+    padding: 1.5rem;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 99;
 }
 
 .navegacao__logo {
@@ -101,38 +86,38 @@ li {
 }
 
 .navegacao__box {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
 }
 
 .navegacao__itens {
+    background-color: #674582;
+    padding: 3rem 0;
     position: absolute;
     right: -700px;
-    top: 85px;
-    width: 100%;
-    background-color: #674582;
     text-align: center;
-    padding: 3rem 0;
+    top: 85px;
     transition: right 1s;
+    width: 100%;
 }
 
 .navegacao__itens.ativo {
-    display: block;
-    right: 0;
-    top: 85px;
-    width: 100%;
     background-color: #674582;
-    text-align: center;
+    display: block;
     padding: 3rem 0;
+    right: 0;
+    text-align: center;
+    top: 85px;
     transition: right 1s;
+    width: 100%;
 }
 
-.navegacao__itens li > a {
+.navegacao__itens li>a {
     transition: all .2s;
 }
 
-.navegacao__itens li > a:hover {
+.navegacao__itens li>a:hover {
     color: #C083B9;
 }
 
@@ -155,108 +140,61 @@ li {
     margin: 0 1rem;
 }
 
-
-/* --- estilos de navegacao header --- */
 header {
-    min-height: 80vh;
-    height: 500px;
-    background: linear-gradient(rgba(132, 0, 255, 0.205),
-                                rgb(132, 0, 255, 0.2)),
-                url(../img/rita1-1.png);
+    align-items: flex-end;
+    background: linear-gradient(rgba(127, 125, 125, 0.205),
+            rgba(11, 11, 11, 0.2)),
+        url(../img/rita1-1.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center 14%;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    padding: 11rem 2rem 5rem 2rem;
     color: rgb(255, 255, 255);
+    display: flex;
+    height: 500px;
+    min-height: 80vh;
+    padding: 11rem 2rem 5rem 2rem;
+    text-align: center;
+
 }
 
 .principal__titulo {
-    text-transform: uppercase;
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2.5rem;
     font-weight: 900;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    /* margin-bottom: 0%;
-    text-align: right; */
-
+    text-transform: uppercase;
 }
 
 .principal__sub {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.5rem;
     font-weight: 300;
     margin: 2rem 0 3rem 0;
-    font-size: 1.5rem;
-    font-family: 'El Messiri', sans-serif;
 }
 
-
-
-/* --- PRIMEIRA SECTION MARAVILHOSAS --- */
-/* .maravilhosas__titulo {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    color: #63458a;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.maravilhosas__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    color: #63458a;
-}
-
-.maravilhosas__perfil {
-    max-width: 120px;
-    margin: 2rem;
-}
-
-.maravilhosas__perfil img {
-    background-color: #63458a;
-    border-radius: 10px;
-}
-
-.maravilhosas__perfil a img {
-    transition: all .5s;
-}
-
-
-.maravilhosas__perfil a:hover {
-    text-decoration: underline;
-}
-
-.maravilhosas__perfil a:hover img {
-    box-shadow: 0 3px 10px rgba(0,0,0,.2);
-} */
-
-
-/* --- estilizacao footer --- */
 .rodape {
+    align-items: center;
     background-color: #323534;
     color: white;
-    font-size: .9rem;
     display: flex;
+    font-size: .9rem;
     flex-direction: column;
-    align-items: center;
     padding-top: .8rem;
 }
 
 .rodape__principal {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
     padding: 1.5rem 0;
+    text-align: center;
 }
 
-.rodape__principal > * {
+.rodape__principal>* {
     margin: 1rem 0;
 }
 
-.rodape__navegacao > li {
+.rodape__navegacao>li {
     font-size: 1.1rem;
     margin: 1rem;
 }
@@ -274,8 +212,8 @@ header {
 }
 
 .rodape__redes-sociais a {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     transition: all .5s;
 }
@@ -285,8 +223,8 @@ header {
 }
 
 .rodape__redes-sociais img {
-    max-width: 50px;
     margin-right: .5rem;
+    max-width: 50px;
 }
 
 .rodape__redes-sociais span {
@@ -295,54 +233,49 @@ header {
 }
 
 .rodape__cc {
-    width: 100%;
     background-color: #292A2A;
     font-size: 1rem;
     opacity: 0.5;
     text-align: center;
+    width: 100%;
 }
 
-/** ---- PERSONALIDADE ---- **/
-/* --- HEADER --- */
- .header-personalidade {
-    display: flex;
-    background-size: cover;
+.header-personalidade {
     align-items: flex-end;
-    justify-content: center;
-    padding: 0 2rem;
+    background-size: cover;
     color: white;
-    min-height: 80vh;
+    display: flex;
     height: 500px;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 0 2rem;
 }
 
 .header-personalidade__titulo {
-    text-align: center;
     font-size: 2.6rem;
+    text-align: center;
     text-transform: uppercase;
 }
 
-/* --- PEFIL DIVA--- */
 .secao-diva {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin: 10px auto;
     padding: 5rem 2rem;
-    margin: 0 auto;
 }
 
 .secao-diva__titulo {
-    text-align: center;
+    color: #674582;
     font-family: 'El Messiri', sans-serif;
     font-size: 2rem;
-    color: #674582;
+    text-align: center;
 }
 
 .secao-diva__titulo_esq {
-    margin-right: center;
     font-family: 'El Messiri', sans-serif;
-    
-    
+    margin-right: center;
 }
 
 .secao-diva p {
@@ -353,60 +286,59 @@ header {
 }
 
 .secao-diva__introducao {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Special Elite', cursive;
 }
 
 .secao-diva__foto-perfil {
-    max-width: 18rem;
     margin: 1rem;
+    max-width: 18rem;
 }
 
 .secao-diva__citacao p {
-    font-weight: bold;
     border: 1px solid #63458a;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.7rem;
     font-family: 'El Messiri', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
 }
 
 .secao-diva__historia {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 5rem 0;
+    display: flex;
     font-family: 'Special Elite', cursive;
+    flex-direction: column;
+    padding: 5rem 0;
 }
 
-.img_ivone{
+.img_ivone {
     max-width: 100%;
 }
 
-/* --- AUTORA --- */
 .secao-autora {
     background-color: #e4b7e5;
     display: flex;
     justify-content: center;
 }
 
-.secao-autora > div {
-    text-align: center;
-    display: flex;
+.secao-autora>div {
     align-items: center;
-    justify-content: space-around;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 2rem 0;
+    text-align: center;
 }
 
 .secao-autora__foto img {
-    max-width: 150px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
     border-radius: 50%;
+    height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    width: 150px;
 }
 
 .secao-autora__dados {
@@ -426,53 +358,50 @@ header {
 }
 
 .secao-cta {
-    text-align: center;
     padding: 4rem 0;
+    text-align: center;
 }
 
-/*** MEDIA QUERIES - Aqui tem toda responsividade da aplicacao ***/
-/* TABLET */
 @media (min-width: 768px) {
-    /* --- NAV --- */
+
     .navegacao__itens {
-        position: static;
         display: flex;
         padding: 0;
+        position: static;
         width: auto;
     }
 
     .navegacao__nav {
         margin-bottom: 0;
     }
-    
+
     .navegacao__itens ul {
+        align-items: center;
         display: flex;
         justify-content: space-around;
-        width: 100%;
-        align-items: center;
         text-align: center;
+        width: 100%;
     }
-    
+
     .navegacao__itens li {
         font-size: 1.2rem;
         margin: 0 .6rem;
     }
-    
+
     .navegacao__menu-hamburguer {
         display: none;
     }
 
-    /* --- HEADER --- */
     header {
         min-height: 75vh;
-        text-align: left;
         padding: 5rem 10rem;
+        text-align: left;
     }
 
     .principal__titulo {
         font-size: 2.9rem;
     }
-    
+
     .principal__sub {
         font-size: 1.8rem;
     }
@@ -481,14 +410,13 @@ header {
         margin: 0;
     }
 
-    /* --- SECTION MARAVILHOSAS --- */
     .maravilhosas {
         padding: 4rem 0;
     }
 
-    .maravilhosas__box > div {
-        max-width: 200px;
+    .maravilhosas__box>div {
         margin: 5rem;
+        max-width: 200px;
     }
 
     .maravilhosas__perfil p {
@@ -496,15 +424,14 @@ header {
         margin-top: 1rem;
     }
 
-    /* --- FOOTER --- */
     .rodape {
         padding-top: 0;
     }
 
     .rodape__principal {
+        align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
         width: 100%;
     }
 
@@ -512,17 +439,15 @@ header {
         max-width: 250px;
     }
 
-    .rodape__navegacao > li {
-        font-size: 1.5rem;;
+    .rodape__navegacao>li {
+        font-size: 1.5rem;
+        ;
     }
-   
-    /** PERSONALIDADE **/
-    /* --- OUTRA HEADER --- */
+
     .header-personalidade {
-        padding: 0 20rem;
-        display: flex;
-        
         align-items: flex-end;
+        display: flex;
+        padding: 0 20rem;
     }
 
     .header-personalidade__titulo {
@@ -535,45 +460,53 @@ header {
     .principal {
         max-width: 650px;
     }
+
     .secao-diva__introducao {
         flex-direction: row;
         margin: 3rem 0;
     }
+
     .secao-diva__foto-perfil {
-        max-width: 100%;
         margin: 0 4rem;
+        max-width: 100%;
     }
+
     .secao-diva p {
         font-size: 1.7rem;
     }
+
     .secao-diva__citacao p {
         font-size: 2.5rem;
         padding: 4rem;
     }
-    .secao-autora > div {
+
+    .secao-autora>div {
         flex-direction: row;
-        text-align: left;
         justify-content: center;
         padding: 0;
+        text-align: left;
     }
+
     .secao-autora__dados {
         margin: 0 3rem;
     }
 
 }
 
-/* DESKTOP */
 @media (min-width: 1440px) {
     .navegacao__box {
         max-width: 80%;
     }
+
     header {
         min-height: 90vh;
     }
+
     .navegacao__itens li {
-        font-size: 1.5rem;
         margin: 0 1rem;
+        font-size: 1.5rem;
     }
+
     .principal {
         max-width: 650px;
     }
